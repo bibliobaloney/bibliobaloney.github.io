@@ -1,0 +1,6 @@
+.chart-iframe {
+    width: 900px;
+    height: 400px;
+    resize: both;
+    overflow: auto;
+  }
