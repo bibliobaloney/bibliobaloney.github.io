@@ -75,6 +75,30 @@ body {
     text-align: center;
 }
 
+table {
+	border-collapse: collapse;
+}
+th {
+  border-bottom: 2px solid black;
+}
+table td {
+	padding: 5px;
+}
+table thead td {
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+}
+table tbody td {
+	border-bottom: 1px solid #ddd;
+}
+table tbody tr {
+	background-color: #f9fafb;
+}
+table tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}
+
 .piechart-iframe {
     width: 900px;
     height: 400px;

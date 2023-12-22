@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>CCB Aggregate Data</title>
@@ -31,8 +32,9 @@
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2023-12-21</span>: <span id="numactivecases">boop</span></h3>
-<h3>Average number of days between claim filed and <span id="rundate">2023-12-21</span>: 
+<h3>Number of active claims as of <span id="rundate">2023-12-22</span>: 
+<span id="numactivecases"><a href="activecasesbarelist.html">39</a></span></h3>
+<h3>Average number of days between claim filed and <span id="rundate">2023-12-22</span>: 
     <span id="avgdaysactivecasesopen">boop</span></h3>
 <h3>Types of claims</h3>
 <table></table>
@@ -42,9 +44,97 @@
 <h3>Representation</h3>
 <p>What percent of the claims were filed by claimants with attorneys?</p>
 <div class="flex-container">
-<div>Currently active cases<table></table></div>
-<div>Cases that were active, but have since closed<table></table></div>
-<div>All cases<table></table></div>
+<div><h4>Currently active cases</h4>
+<p><span id="pctactiverep">64%</span> of claims had claimants with representation.</p>
+<p><span id="multiplerep">0</span> claims had multiple law firms representing claimants.</p>
+<table class="dataframe" id="activerepresentation">
+<thead>
+<tr style="text-align: center;">
+<th>Law firm</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No law firm</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Jekielek &amp; Janis</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Higbee &amp; Associates</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Leichtman Law PLLC</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Axenfeld Law Group, LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Driscoll &amp; Seltzer, PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Romano PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Law Office of Elizabeth T Russell LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Royster Law, LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Workplace Legal, APLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Evans &amp; Dixon</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cognition IP, P.C.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ice Miller LLP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Carstens, Allen &amp; Gourley, LLP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gavin Law Offices, PLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Law Firm of Higbee and Associates</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Christensen O'Connor Johnson Kindness PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Burns the Attorney, Inc.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Segal McCambridge Singer and Mahoney</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Active plus formerly active</h4><table></table></div>
+<div><h4>All cases filed</h4><table></table></div>
 </div>
 <h2 id="open">Open Cases</h2>
 <p>Cases that have not yet reached the active phase, but also have not yet been closed.</p>
