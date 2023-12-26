@@ -20,27 +20,244 @@
 <div class="main">
 <div class="header"><h1>Aggregate data about claims filed with the Copyright Claims Board</h1></div>
 <div class="content">
+<h2>About this page</h2>
+<p>Once a week (or so) I run a script to collect information about newly available public documents on 
+        <a href="https://dockets.ccb.gov/">eCCB</a>. I store that information 
+        in a database that you can download from Github 
+        if you want to run your own queries. Because the information is collected 
+        by a script and not checked by a human, I can't guarantee that it's 100% accurate, but it should be 
+        pretty close, and more accurate than what I was capturing with the old scripts (e.g. if two reasons 
+        are found in a dismissal order, both are now collected). 
+        I've been watching CCB data since the CCB was a few months old, and I've tried to make sure 
+        the script accounts for a variety of rare occurrences and edge cases. I also have it prompt for 
+        human input when the data it grabs is hard to interpret.
+        This page collects the results of some of the queries I thought would be most 
+        interesting. You can contact me at bibliobaloney@duck.com if you want to suggest other queries 
+        I might run, or if you want the stuff that used to be here.
+</p>
+<p>Page last updated <span id="rundate">2023-12-26</span></p>
 <h2 id="fds">Final Determinations</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days). ...
         After parties have submitted their written testimony and any hearings have been held, 
         the CCB will issue its final determination."</p>
-<table></table>
+<table class="dataframe" id="fdstable">
+<thead>
+<tr style="text-align: center;">
+<th>Docket Number</th>
+<th>Caption</th>
+<th>Determination type</th>
+<th>Damages</th>
+<th>Claimant represented?</th>
+<th>Date</th>
+<th>Case duration (days)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0005">22-CCB-0005</a></td>
+<td>Dermansky v. Rule 62</td>
+<td>Default</td>
+<td>1350</td>
+<td>Yes</td>
+<td>2023-11-01</td>
+<td>503</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0008">22-CCB-0008</a></td>
+<td>Corjulo v. Mandrell</td>
+<td>Final Determination</td>
+<td>2250</td>
+<td>No</td>
+<td>2023-12-14</td>
+<td>546</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0012">22-CCB-0012</a></td>
+<td>Bronner v. EssayZoo</td>
+<td>Default</td>
+<td>1200</td>
+<td>No</td>
+<td>2023-11-20</td>
+<td>522</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0035">22-CCB-0035</a></td>
+<td>Flores v. Mitrakos</td>
+<td>Settlement</td>
+<td>0</td>
+<td>No</td>
+<td>2023-02-15</td>
+<td>232</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0045">22-CCB-0045</a></td>
+<td>Oppenheimer v. Prutton</td>
+<td>Final Determination</td>
+<td>1000</td>
+<td>Yes</td>
+<td>2023-02-28</td>
+<td>236</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0056">22-CCB-0056</a></td>
+<td>Hursey v. Lavaca</td>
+<td>Default</td>
+<td>3000</td>
+<td>No</td>
+<td>2023-08-24</td>
+<td>405</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0072">22-CCB-0072</a></td>
+<td>Scott Douglas Ora v. Warner Chappell Music</td>
+<td>Dismissal</td>
+<td>0</td>
+<td>No</td>
+<td>2023-06-27</td>
+<td>335</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0098">22-CCB-0098</a></td>
+<td>Joe Hand Promotions v. Arif Skyline Cafe</td>
+<td>Default</td>
+<td>3000</td>
+<td>Yes</td>
+<td>2023-09-22</td>
+<td>407</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0100">22-CCB-0100</a></td>
+<td>Joe Hand Promotions v. Brittany R. Havely</td>
+<td>Default</td>
+<td>3300</td>
+<td>Yes</td>
+<td>2023-10-04</td>
+<td>418</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0112">22-CCB-0112</a></td>
+<td>Paramount Pictures v. JMC POP UPS</td>
+<td>Settlement</td>
+<td>No information provided</td>
+<td>Yes</td>
+<td>2023-10-23</td>
+<td>425</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0137">22-CCB-0137</a></td>
+<td>Urbanlip.com v. Faviana International</td>
+<td>Default</td>
+<td>2600</td>
+<td>Yes</td>
+<td>2023-11-01</td>
+<td>427</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0163">22-CCB-0163</a></td>
+<td>Hursey v. QUINNEY</td>
+<td>Default</td>
+<td>3000</td>
+<td>No</td>
+<td>2023-08-31</td>
+<td>343</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0219">22-CCB-0219</a></td>
+<td>Hursey v. Hakimian Global</td>
+<td>Default</td>
+<td>3000</td>
+<td>No</td>
+<td>2023-09-22</td>
+<td>329</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0251">22-CCB-0251</a></td>
+<td>Pinwheel Crafts v. Mary L. Pettit</td>
+<td>Settlement</td>
+<td>0</td>
+<td>No</td>
+<td>2023-10-19</td>
+<td>322</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/22-CCB-0269">22-CCB-0269</a></td>
+<td>ARMATUS DEALER UPLIFT v. Wooden Automotive Consultants</td>
+<td>Settlement</td>
+<td>9000</td>
+<td>Yes</td>
+<td>2023-07-05</td>
+<td>202</td>
+</tr>
+<tr>
+<td><a href="https://dockets.ccb.gov/case/detail/23-CCB-0172">23-CCB-0172</a></td>
+<td>Kenna Sato Designs v. Lisitsa</td>
+<td>Settlement</td>
+<td>300</td>
+<td>Yes</td>
+<td>2023-11-14</td>
+<td>182</td>
+</tr>
+</tbody>
+</table>
 <h2 id="active">Active Cases</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2023-12-22</span>: 
+<h3>Number of active claims as of <span id="rundate">2023-12-26</span>: 
 <span id="numactivecases"><a href="activecasesbarelist.html">39</a></span></h3>
-<h3>Average number of days between claim filed and <span id="rundate">2023-12-22</span>: 
-    <span id="avgdaysactivecasesopen">boop</span></h3>
+<h3>For these active cases, average number of days since the earliest available claim was filed (as of 
+        <span id="rundate">2023-12-26</span>): 
+    <span id="avgdaysactivecasesopen">182</span></h3>
 <h3>Types of claims</h3>
-<table></table>
+<table class="dataframe" id="activeclaimtypes">
+<thead>
+<tr style="text-align: center;">
+<th>Claim type</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infringement</td>
+<td>37</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DMCA Misrepresentation</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <h3>Potential for default</h3>
-<p>Is there anything on the docket that has been filed by a respondent?</p>
-<table></table>
+<p>Is there anything on the docket that was filed by a respondent (not a claimant or the CCB)?</p>
+<table class="dataframe" id="roadtodefault">
+<thead>
+<tr style="text-align: center;">
+<th>Claim type</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>18</td>
+</tr>
+<tr>
+<td>It's complicated</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <h3>Representation</h3>
 <p>What percent of the claims were filed by claimants with attorneys?</p>
 <div class="flex-container">
@@ -133,30 +350,375 @@
 </tr>
 </tbody>
 </table></div>
-<div><h4>Active plus formerly active</h4><table></table></div>
-<div><h4>All cases filed</h4><table></table></div>
+<div><h4>Active plus formerly active</h4>
+<p><span id="pcteveractiverep">85%</span> of claims had claimants with representation.</p>
+<p><span id="everactivemultiplerep">0</span> claims had multiple law firms representing claimants.</p>
+<table class="dataframe" id="everactiverepresentation">
+<thead>
+<tr style="text-align: center;">
+<th>Law firm</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No law firm</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Jekielek &amp; Janis</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Leichtman Law PLLC</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Higbee &amp; Associates</td>
+<td>3</td>
+</tr>
+<tr>
+<td>The Law Firm of Higbee and Associates</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Cognition IP, P.C.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Driscoll &amp; Seltzer, PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Romano PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Law Office of Elizabeth T Russell LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Royster Law, LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Workplace Legal, APLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Evans &amp; Dixon</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Axenfeld Law Group, LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gavin Law Offices, PLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ice Miller LLP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Carstens, Allen &amp; Gourley, LLP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Christensen O'Connor Johnson Kindness PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Burns the Attorney, Inc.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gurr Brande &amp; Spendlove, PLLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Law Office of Steven Wrobel LLC</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kilpatrick Townsend &amp; Stockton LLP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>L/O Lawrence G Townsene</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Segal McCambridge Singer and Mahoney</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>All cases filed</h4>
+<p><span id="pctallclaimsrep">25%</span> of claims (where the claim is available) 
+        had claimants with representation.</p>
+<p>(See <a href="#all">All Cases</a> below for more information about all claims.)</p>
 </div>
+</div><!--Close flex-container for Active - Representation-->
 <h2 id="open">Open Cases</h2>
-<p>Cases that have not yet reached the active phase, but also have not yet been closed.</p>
+<p>Cases that have not yet reached the active phase, but also have not yet been dismissed/closed.</p>
 <h3>Current status</h3>
-<table></table>
-<h3>Historical numbers</h3>
+<table class="dataframe" id="opencasestatus">
+<thead>
+<tr style="text-align: center;">
+<th>Status</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Waiting for Proof of Service</td>
+<td>39</td>
+</tr>
+<tr>
+<td>Waiting for Scheduling Order</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Waiting for Amended Claim</td>
+<td>32</td>
+</tr>
+<tr>
+<td>In Abeyance</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Waiting for Initial Review</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Waiting for Review of Amended Claim</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<!-- To be added last
+        <h3>Historical numbers</h3>
 <iframe title="Status of open cases over time"></iframe>
+<-->
 <h2 id="closed">Dismissed Cases</h2>
 <h3>Reasons for dismissal</h3>
+<p>Totals may be more than the total number of dismissal orders because a few orders include two reasons, 
+        e.g. bad faith and failure to amend.
+</p>
+<p>A few claims have been dismissed as the result of a settlement with the condition that they are 
+        initially without prejudice but will become dismissals with prejudice if the claimant does 
+        not file a new claim within a certain period of time. I have abbreviated this as "Settlement; 
+        prejudice pending."
+</p>
+<p>There's also a <a href="charts/alldismissals.html">pie chart for the reasons across all dismissals 
+        so far.
+</a></p>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
-</div>
-<iframe class="piechart-iframe" src="charts/alldismissals.html" title="Reasons in all dismissals so far"></iframe>
-<h3>Time betwen claim filing and dismissal</h3>
+<div><h4>All dismissals</h4>
+<table class="dataframe" id="dismissalreasonsall">
+<thead>
+<tr style="text-align: center;">
+<th>Reasons</th>
+<th>Orders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Failure to amend</td>
+<td>212</td>
+</tr>
+<tr>
+<td>Proof of service not filed</td>
+<td>94</td>
+</tr>
+<tr>
+<td>Respondent(s) opted out</td>
+<td>67</td>
+</tr>
+<tr>
+<td>Request from claimant</td>
+<td>54</td>
+</tr>
+<tr>
+<td>3 tries and still noncompliant</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Settlement; dismissed with prejudice</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Copyright registration refused by Copyright Office</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Failure to provide respondent address</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Bad-faith conduct</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Settlement; dismissed without prejudice</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Service was not valid</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Settlement; prejudice pending</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Foreign respondent; no bad faith found</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Payment for the claim failed</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Second filing fee not paid</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Copyright registration application abandoned</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4><table class="dataframe" id="dismissalreasonsrecent">
+<thead>
+<tr style="text-align: center;">
+<th>Reasons</th>
+<th>Orders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Failure to amend</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Proof of service not filed</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Request from claimant</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Respondent(s) opted out</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3 tries and still noncompliant</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Settlement; dismissed with prejudice</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Service was not valid</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Settlement; prejudice pending</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bad-faith conduct</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>1st year of CCB</h4><table class="dataframe" id="dismissalreasonsold">
+<thead>
+<tr style="text-align: center;">
+<th>Reasons</th>
+<th>Orders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Failure to amend</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Proof of service not filed</td>
+<td>62</td>
+</tr>
+<tr>
+<td>Respondent(s) opted out</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Request from claimant</td>
+<td>28</td>
+</tr>
+<tr>
+<td>3 tries and still noncompliant</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Failure to provide respondent address</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Settlement; dismissed with prejudice</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Copyright registration refused by Copyright Office</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Foreign respondent; no bad faith found</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Settlement; dismissed without prejudice</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Service was not valid</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Bad-faith conduct</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Copyright registration application abandoned</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+</div><!--End Dissmissal reasons 3 tables div-->
+<h3>Days elapsed betwen filing of initial claim filing of order dismissing claim</h3>
 <p>This data is only available for cases where the date of the filing of the claim is known.</p>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
+<div><h4>All dismissals</h4>
+<p>Average: <span id="avgtodismissalall">114</span></p>
+<p>Median: <span id="mediantodismissalall">99</span></p>
+<p>Mode: <span id="modetodismissalall">73</span></p>
 </div>
+<div><h4>Dismissals in the past 30 days</h4>
+<p>Average: <span id="avgtodismissalrecent">136</span></p>
+<p>Median: <span id="mediantodismissalrecent">103</span></p>
+<p>Mode: <span id="modetodismissalrecent">103</span></p>
+</div>
+<div><h4>Dismissals in the 1st year of the CCB</h4>
+<p>Average: <span id="avgtodismissalold">102</span></p>
+<p>Median: <span id="mediantodismissalold">89</span></p>
+<p>Mode: <span id="modetodismissalold">73</span></p>
+</div>
+</div><!--End Dismissal times 3 part div-->
 <h2 id="all">All Cases</h2>
 <h3>Opening and resolution</h3>
 <p>Claims filed, claims dismissed, final determinations issued</p>
