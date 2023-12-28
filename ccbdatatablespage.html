@@ -35,13 +35,14 @@
         interesting. You can contact me at bibliobaloney@duck.com if you want to suggest other queries 
         I might run, or if you want the stuff that used to be here.
 </p>
-<p>Page last updated <span id="rundate">2023-12-26</span></p>
+<p>Page last updated <span id="rundate">2023-12-28</span></p>
 <h2 id="fds">Final Determinations</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days). ...
         After parties have submitted their written testimony and any hearings have been held, 
         the CCB will issue its final determination."</p>
+<p>Final determinations issued: <span id="fdscount">16</span></p>
 <table class="dataframe" id="fdstable">
 <thead>
 <tr style="text-align: center;">
@@ -206,10 +207,10 @@
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2023-12-26</span>: 
+<h3>Number of active claims as of <span id="rundate">2023-12-28</span>: 
 <span id="numactivecases"><a href="activecasesbarelist.html">39</a></span></h3>
 <h3>For these active cases, average number of days since the earliest available claim was filed (as of 
-        <span id="rundate">2023-12-26</span>): 
+        <span id="rundate">2023-12-28</span>): 
     <span id="avgdaysactivecasesopen">182</span></h3>
 <h3>Types of claims</h3>
 <table class="dataframe" id="activeclaimtypes">
@@ -260,6 +261,8 @@
 </table>
 <h3>Representation</h3>
 <p>What percent of the claims were filed by claimants with attorneys?</p>
+<p>This information is pulled from the earliest publicly available claim filed in a case, and is only available 
+        when a claim is publicly available.</p>
 <div class="flex-container">
 <div><h4>Currently active cases</h4>
 <p><span id="pctactiverep">64%</span> of claims had claimants with representation.</p>
@@ -482,7 +485,7 @@
 </tr>
 <tr>
 <td>Waiting for Amended Claim</td>
-<td>32</td>
+<td>31</td>
 </tr>
 <tr>
 <td>In Abeyance</td>
@@ -490,11 +493,11 @@
 </tr>
 <tr>
 <td>Waiting for Initial Review</td>
-<td>5</td>
+<td>10</td>
 </tr>
 <tr>
 <td>Waiting for Review of Amended Claim</td>
-<td>4</td>
+<td>5</td>
 </tr>
 </tbody>
 </table>
@@ -601,11 +604,7 @@
 <tbody>
 <tr>
 <td>Failure to amend</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Proof of service not filed</td>
-<td>8</td>
+<td>10</td>
 </tr>
 <tr>
 <td>Request from claimant</td>
@@ -614,6 +613,10 @@
 <tr>
 <td>Respondent(s) opted out</td>
 <td>6</td>
+</tr>
+<tr>
+<td>Proof of service not filed</td>
+<td>5</td>
 </tr>
 <tr>
 <td>3 tries and still noncompliant</td>
@@ -626,10 +629,6 @@
 <tr>
 <td>Service was not valid</td>
 <td>2</td>
-</tr>
-<tr>
-<td>Settlement; prejudice pending</td>
-<td>1</td>
 </tr>
 <tr>
 <td>Bad-faith conduct</td>
@@ -709,9 +708,9 @@
 <p>Mode: <span id="modetodismissalall">73</span></p>
 </div>
 <div><h4>Dismissals in the past 30 days</h4>
-<p>Average: <span id="avgtodismissalrecent">136</span></p>
-<p>Median: <span id="mediantodismissalrecent">103</span></p>
-<p>Mode: <span id="modetodismissalrecent">103</span></p>
+<p>Average: <span id="avgtodismissalrecent">131</span></p>
+<p>Median: <span id="mediantodismissalrecent">99</span></p>
+<p>Mode: <span id="modetodismissalrecent">321</span></p>
 </div>
 <div><h4>Dismissals in the 1st year of the CCB</h4>
 <p>Average: <span id="avgtodismissalold">102</span></p>
@@ -721,14 +720,149 @@
 </div><!--End Dismissal times 3 part div-->
 <h2 id="all">All Cases</h2>
 <h3>Opening and resolution</h3>
-<p>Claims filed, claims dismissed, final determinations issued</p>
-<table></table>
-<h3>Types of claims</h3>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
-</div>
+<div><p>Dockets found: <span id="allcasescount">696</span></p></div>
+<div><p>Claims dismissed/closed: <span id="numclosedcases">524</span></p>
+<table class="dataframe" id="closedcasestatus">
+<thead>
+<tr style="text-align: center;">
+<th>Status</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dismissed Without Prejudice</td>
+<td>483</td>
+</tr>
+<tr>
+<td>Dismissed With Prejudice</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Final Determination - Default</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Final Determination - Settlement</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Closed; failure of payment likely</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Final Determination</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Final Determination - Dismissal</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><p>Final determinations issued: <span id="fdscount">16</span></p></div>
+</div><!--Close 3 part div about opening and resolution-->
+<h3>Types of claims</h3>
+<p>The information about types of claims, representation, and whether a claimant has selcted the 
+        smaller claims track is pulled from the earliest publicly available claim filed in a case, 
+        and is only available when a claim is publicly available.</p>
+<div class="flex-container">
+<div><h4>All claims</h4><table class="dataframe" id="allclaimtypes">
+<thead>
+<tr style="text-align: center;">
+<th>Claim type</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infringement</td>
+<td>552</td>
+</tr>
+<tr>
+<td>DMCA Misrepresentation</td>
+<td>61</td>
+</tr>
+<tr>
+<td>Infringement, DMCA Misrepresentation</td>
+<td>49</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Infringement, Noninfringement, DMCA Misrepresentation</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Noninfringement, DMCA Misrepresentation</td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4><table class="dataframe" id="recentclaimtypes">
+<thead>
+<tr style="text-align: center;">
+<th>Claim type</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infringement</td>
+<td>13</td>
+</tr>
+<tr>
+<td>DMCA Misrepresentation</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Infringement, DMCA Misrepresentation</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>1st year of CCB</h4><table class="dataframe" id="oldclaimtypes">
+<thead>
+<tr style="text-align: center;">
+<th>Claim type</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infringement</td>
+<td>398</td>
+</tr>
+<tr>
+<td>Infringement, DMCA Misrepresentation</td>
+<td>35</td>
+</tr>
+<tr>
+<td>DMCA Misrepresentation</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Infringement, Noninfringement, DMCA Misrepresentation</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Noninfringement, DMCA Misrepresentation</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+</div><!--Close types of claims 3 part div-->
 <h3>Smaller claims</h3>
 <p>"When total damages sought in a claim do not exceed $5,000 (exclusive of attorneys' fees and 
         costs), a claimant may request consideration under the CCB's 
@@ -738,9 +872,9 @@
         streamlined than the typical cases before the CCB."</p>
 <p>Are claimants selecting the "smaller claim" option</p>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
+<div><h4>All claims</h4><table></table></div>
+<div><h4>Past 30 days</h4><table></table></div>
+<div><h4>1st year of CCB</h4><table></table></div>
 </div>
 <h3>Representation</h3>
 <p>Is there a law firm for the claimant listed in the claim?</p>
