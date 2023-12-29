@@ -35,7 +35,7 @@
         interesting. You can contact me at bibliobaloney@duck.com if you want to suggest other queries 
         I might run, or if you want the stuff that used to be here.
 </p>
-<p>Page last updated <span id="rundate">2023-12-28</span></p>
+<p>Page last updated <span id="rundate">2023-12-29</span></p>
 <h2 id="fds">Final Determinations</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
@@ -207,10 +207,10 @@
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2023-12-28</span>: 
+<h3>Number of active claims as of <span id="rundate">2023-12-29</span>: 
 <span id="numactivecases"><a href="activecasesbarelist.html">39</a></span></h3>
 <h3>For these active cases, average number of days since the earliest available claim was filed (as of 
-        <span id="rundate">2023-12-28</span>): 
+        <span id="rundate">2023-12-29</span>): 
     <span id="avgdaysactivecasesopen">182</span></h3>
 <h3>Types of claims</h3>
 <table class="dataframe" id="activeclaimtypes">
@@ -607,10 +607,6 @@
 <td>10</td>
 </tr>
 <tr>
-<td>Request from claimant</td>
-<td>6</td>
-</tr>
-<tr>
 <td>Respondent(s) opted out</td>
 <td>6</td>
 </tr>
@@ -619,12 +615,16 @@
 <td>5</td>
 </tr>
 <tr>
+<td>Request from claimant</td>
+<td>5</td>
+</tr>
+<tr>
 <td>3 tries and still noncompliant</td>
 <td>4</td>
 </tr>
 <tr>
 <td>Settlement; dismissed with prejudice</td>
-<td>3</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Service was not valid</td>
@@ -866,42 +866,444 @@
 <h3>Smaller claims</h3>
 <p>"When total damages sought in a claim do not exceed $5,000 (exclusive of attorneys' fees and 
         costs), a claimant may request consideration under the CCB's 
-        <a href="https://ccb.gov/faq/#fivethousand">“Smaller Claims”</a> procedures. 
+        '<a href="https://ccb.gov/faq/#fivethousand">Smaller Claims</a>' procedures. 
         Smaller Claims will be decided by a single Copyright Claims Officer, but the determination 
         will have the same effect as one issued by the full CCB. These types of cases are even more 
         streamlined than the typical cases before the CCB."</p>
-<p>Are claimants selecting the "smaller claim" option</p>
+<p>Are claimants selecting the "smaller claim" option?</p>
 <div class="flex-container">
-<div><h4>All claims</h4><table></table></div>
-<div><h4>Past 30 days</h4><table></table></div>
-<div><h4>1st year of CCB</h4><table></table></div>
+<div><h4>All claims</h4><table class="dataframe" id="smallerall">
+<thead>
+<tr style="text-align: center;">
+<th>Smaller?</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>404</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>281</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4><table class="dataframe" id="smallerrecent">
+<thead>
+<tr style="text-align: center;">
+<th>Smaller?</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>7</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>All claims</h4><table class="dataframe" id="smallerold">
+<thead>
+<tr style="text-align: center;">
+<th>Smaller?</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>293</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>186</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <h3>Representation</h3>
 <p>Is there a law firm for the claimant listed in the claim?</p>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
-</div>
+<div><h4>All claims</h4>
+<p><span id="pctallclaimsrep">25%</span> of claims had claimants with representation.</p>
+<p><span id="multiplerepallclaims">0</span> claims had multiple law firms representing claimants.</p>
+<p>(To save space, this table only includes law firms listed on two or more claims.)</p>
+<table class="dataframe" id="representationall">
+<thead>
+<tr style="text-align: center;">
+<th>Law firm</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No law firm</td>
+<td>556</td>
+</tr>
+<tr>
+<td>Jekielek &amp; Janis</td>
+<td>32</td>
+</tr>
+<tr>
+<td>The Law Office of David C. Deal, P.L.C.</td>
+<td>20</td>
+</tr>
+<tr>
+<td>The Law Firm of Higbee and Associates</td>
+<td>14</td>
+</tr>
+<tr>
+<td>H. Roske &amp; Associates LLP</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Leichtman Law PLLC</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Higbee &amp; Associates</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Doniger / Burroughs</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Burns the Attorney, Inc.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Law Office of Eric Ridley</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Axenfeld Law Group, LLC</td>
+<td>3</td>
+</tr>
+<tr>
+<td>The Brickell IP Group, PLLC</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Donahue Fitzgerald LLP</td>
+<td>3</td>
+</tr>
+<tr>
+<td>McCulloch Kleinman Law</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Evans &amp; Dixon</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Howard O. Bernstein, P.C.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Selman Munson and Lerner</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4>
+<p><span id="pctrecentclaimsrep">12%</span> of claims had claimants with representation.</p>
+<p><span id="multiplereprecentclaims">0</span> claims had multiple law firms representing claimants.</p>
+<table class="dataframe" id="representationrecent">
+<thead>
+<tr style="text-align: center;">
+<th>Law firm</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No law firm</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Jekielek &amp; Janis</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Law Firm of Higbee and Associates</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>1st year of CCB</h4>
+<p><span id="pctoldclaimsrep">27%</span> of claims had claimants with representation.</p>
+<p><span id="multiplerepoldclaims">0</span> claims had multiple law firms representing claimants.</p>
+<p>(To save space, this table only includes law firms listed on two or more claims.)</p>
+<table class="dataframe" id="representationold">
+<thead>
+<tr style="text-align: center;">
+<th>Law firm</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No law firm</td>
+<td>376</td>
+</tr>
+<tr>
+<td>Jekielek &amp; Janis</td>
+<td>29</td>
+</tr>
+<tr>
+<td>The Law Office of David C. Deal, P.L.C.</td>
+<td>20</td>
+</tr>
+<tr>
+<td>The Law Firm of Higbee and Associates</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Leichtman Law PLLC</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Higbee &amp; Associates</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Burns the Attorney, Inc.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Law Office of Eric Ridley</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Axenfeld Law Group, LLC</td>
+<td>3</td>
+</tr>
+<tr>
+<td>The Brickell IP Group, PLLC</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Donahue Fitzgerald LLP</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Howard O. Bernstein, P.C.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Evans &amp; Dixon</td>
+<td>2</td>
+</tr>
+<tr>
+<td>McCulloch Kleinman Law</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+</div><!--Close the div holding the 3 table divs about represenation-->
 <h2 id="works">Infringement Claims: Works Allegedly Infringed</h2>
-<p>The database only includes information on works from infringement claims. Some claims list multiple 
+<p>In the database I created I hvae chosen to only include information on works from infringement claims. 
+        Some claims list multiple 
         works. The data here describes all works listed in all infringement claims, not just, e.g., 
         the first listed work.
     </p>
 <h3>Types of works</h3>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
+<div><h4>All claims</h4><table class="dataframe" id="infringworktypesall">
+<thead>
+<tr style="text-align: center;">
+<th>Type of work</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pictorial Graphic and Sculptural (such as two-dimensional and three-dimensional works of art, graphic art, and photographs)</td>
+<td>520</td>
+</tr>
+<tr>
+<td>Motion picture and audiovisual</td>
+<td>165</td>
+</tr>
+<tr>
+<td>Sound recordings</td>
+<td>163</td>
+</tr>
+<tr>
+<td>Literary (such as fiction, nonfiction, poetry, reference works)</td>
+<td>113</td>
+</tr>
+<tr>
+<td>Musical (such as the underlying musical composition)</td>
+<td>69</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Dramatic (such as a screenplay, play or other script)</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Architectural</td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4><table class="dataframe" id="ingringworktypesrecent">
+<thead>
+<tr style="text-align: center;">
+<th>Type of work</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motion picture and audiovisual</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Pictorial Graphic and Sculptural (such as two-dimensional and three-dimensional works of art, graphic art, and photographs)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Musical (such as the underlying musical composition)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sound recordings</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Dramatic (such as a screenplay, play or other script)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>1st year of CCB</h4><table class="dataframe" id="ingringworktypesold">
+<thead>
+<tr style="text-align: center;">
+<th>Type of work</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pictorial Graphic and Sculptural (such as two-dimensional and three-dimensional works of art, graphic art, and photographs)</td>
+<td>352</td>
+</tr>
+<tr>
+<td>Sound recordings</td>
+<td>136</td>
+</tr>
+<tr>
+<td>Motion picture and audiovisual</td>
+<td>129</td>
+</tr>
+<tr>
+<td>Literary (such as fiction, nonfiction, poetry, reference works)</td>
+<td>67</td>
+</tr>
+<tr>
+<td>Musical (such as the underlying musical composition)</td>
+<td>53</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Dramatic (such as a screenplay, play or other script)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Architectural</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <h3>Registration</h3>
-<p>For works allegedly infringed, did the claimant assert that they had a registration number, 
-        or an request number (for apending registration application)?
+<p>For works allegedly infringed, did the claimant assert that the work was already registered at the 
+        time the claim was filed? Note that sometimes
+        claimants assert this when it is not the case; I collected purported registration numbers and 
+        request numbers, but did not perform any checks or analysis on those numbers.
     </p>
 <div class="flex-container">
-<div>All claims<table></table></div>
-<div>Past 30 days<table></table></div>
-<div>1st year of CCB<table></table></div>
+<div><h4>All claims</h4><table class="dataframe" id="registeredall">
+<thead>
+<tr style="text-align: center;">
+<th>Registered?</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>801</td>
+</tr>
+<tr>
+<td>No</td>
+<td>298</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>Past 30 days</h4><table class="dataframe" id="registeredrecent">
+<thead>
+<tr style="text-align: center;">
+<th>Registered?</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>23</td>
+</tr>
+<tr>
+<td>No</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<div><h4>1st year of CCB</h4><table class="dataframe" id="registeredold">
+<thead>
+<tr style="text-align: center;">
+<th>Registered?</th>
+<th>Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>621</td>
+</tr>
+<tr>
+<td>No</td>
+<td>162</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <h2 id="otas">Orders to Amend</h2>
 <p>This data was collected by scraping all relevant headings from all publicly availble documents
