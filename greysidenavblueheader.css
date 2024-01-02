@@ -121,3 +121,35 @@ table tbody tr:nth-child(odd) {
     resize: both;
     overflow: auto;
 }
+
+/* ==================== Sortable  - from https://github.com/tofsjonas/sortable */
+.sortable th:hover::after {
+  color: inherit;
+  font-size: 1.2em;
+  content: '\00a0\025B8';
+}
+
+.sortable th::after {
+  font-size: 1.2em;
+  color: transparent;
+  content: '\00a0\025B8';
+}
+
+.sortable th.dir-d::after {
+  color: inherit;
+  content: '\00a0\025BE';
+}
+
+.sortable th.dir-u::after {
+  color: inherit;
+  content: '\00a0\025B4';
+}
+
+th.no-sort {
+  pointer-events: none;
+}
+
+th.no-sort::after {
+  content: none;
+}
+/* ==================== End Sortable */

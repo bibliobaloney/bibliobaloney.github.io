@@ -4,6 +4,7 @@
 <head>
 <title>CCB Aggregate Data</title>
 <link href="greysidenavblueheader.css" rel="stylesheet"/>
+<script src="sortable.js"></script>
 </head>
 <body>
 <div class="side">
@@ -46,7 +47,7 @@ it's been archived</a> and will no longer be updated.
         After parties have submitted their written testimony and any hearings have been held, 
         the CCB will issue its final determination."</p>
 <p>Final determinations issued: <span id="fdscount">16</span></p>
-<table class="dataframe" id="fdstable">
+<table class="dataframe sortable" id="fdstable">
 <thead>
 <tr style="text-align: center;">
 <th>Docket Number</th>
@@ -205,7 +206,6 @@ it's been archived</a> and will no longer be updated.
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="active">Active Cases</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
