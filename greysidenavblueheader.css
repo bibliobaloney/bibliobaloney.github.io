@@ -75,6 +75,14 @@ body {
     text-align: center;
 }
 
+.flex-container table {
+	max-width: 350px;
+}
+
+.flex-container p {
+	max-width: 350px;
+}
+
 table {
 	border-collapse: collapse;
 }
