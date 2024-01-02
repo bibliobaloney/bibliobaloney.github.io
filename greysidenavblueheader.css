@@ -83,6 +83,14 @@ body {
 	max-width: 350px;
 }
 
+.flex-container h3 {
+	margin-top: 0px;
+}
+
+.flex-container h4 {
+	margin-top: 0px;
+}
+
 table {
 	border-collapse: collapse;
 }
