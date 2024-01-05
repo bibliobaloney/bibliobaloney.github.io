@@ -44,7 +44,7 @@ are writing in their claims, you can download a file that incudes that language 
 <a href="infringementdescriptions.csv">Infringement claims (.csv)</a>; 
 <a href="noninfringementdescriptions.csv">Noninfringement claims (.csv)</a>; or
 <a href="dmcadescriptions.csv">DMCA misrepresentation claims (.csv)</a>. </p>
-<p>Page last updated <span id="rundate">2024-01-03</span></p>
+<p>Page last updated <span id="rundate">2024-01-04</span></p>
 <hr/>
 <h2 id="fds">Final Determinations</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
@@ -226,10 +226,10 @@ are writing in their claims, you can download a file that incudes that language 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2024-01-03</span>: 
+<h3>Number of active claims as of <span id="rundate">2024-01-04</span>: 
 <span id="numactivecases"><a href="activecasesbarelist.html">38</a></span></h3>
 <h3>For these active cases, average number of days since the earliest available claim was filed (as of 
-        <span id="rundate">2024-01-03</span>): 
+        <span id="rundate">2024-01-04</span>): 
     <span id="avgdaysactivecasesopen">184</span></h3>
 <h3>Types of claims</h3>
 <table class="dataframe" id="activeclaimtypes">
@@ -499,31 +499,29 @@ are writing in their claims, you can download a file that incudes that language 
 <td>37</td>
 </tr>
 <tr>
-<td>Waiting for Scheduling Order</td>
-<td>31</td>
-</tr>
-<tr>
 <td>Waiting for Amended Claim</td>
-<td>30</td>
+<td>34</td>
 </tr>
 <tr>
-<td>Waiting for Initial Review</td>
-<td>11</td>
+<td>Waiting for Scheduling Order/Expiration of Opt Out Window</td>
+<td>31</td>
 </tr>
 <tr>
 <td>In Abeyance</td>
 <td>10</td>
 </tr>
 <tr>
+<td>Waiting for Initial Review</td>
+<td>9</td>
+</tr>
+<tr>
 <td>Waiting for Review of Amended Claim</td>
-<td>5</td>
+<td>3</td>
 </tr>
 </tbody>
 </table>
-<!-- To be added last
-        <h3>Historical numbers</h3>
-<iframe title="Status of open cases over time"></iframe>
-<-->
+<h3>Historical status numbers</h3>
+<iframe src="charts/ccbopencasesovertime.html"></iframe>
 <hr/>
 <h2 id="closed">Dismissed Cases</h2>
 <h3>Reasons for dismissal</h3>
@@ -757,15 +755,11 @@ are writing in their claims, you can download a file that incudes that language 
 </tr>
 <tr>
 <td>Respondent(s) opted out</td>
-<td>8</td>
+<td>7</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
 <td>7</td>
-</tr>
-<tr>
-<td>Request from claimant</td>
-<td>5</td>
 </tr>
 <tr>
 <td>Service was not valid</td>
@@ -783,6 +777,10 @@ are writing in their claims, you can download a file that incudes that language 
 <td>Bad-faith conduct</td>
 <td>1</td>
 </tr>
+<tr>
+<td>Request from claimant</td>
+<td>1</td>
+</tr>
 </tbody>
 </table></div>
 <div><h4>Past 30 days - represented claimants</h4>
@@ -794,10 +792,6 @@ are writing in their claims, you can download a file that incudes that language 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Request from claimant</td>
-<td>4</td>
-</tr>
 <tr>
 <td>Settlement; dismissed with prejudice</td>
 <td>2</td>
@@ -831,7 +825,7 @@ are writing in their claims, you can download a file that incudes that language 
 </tr>
 <tr>
 <td>Respondent(s) opted out</td>
-<td>7</td>
+<td>6</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
@@ -1024,8 +1018,8 @@ are writing in their claims, you can download a file that incudes that language 
 <p>Mode: <span id="modetodismissalall">73</span></p>
 </div>
 <div><h4>Dismissals in the past 30 days</h4>
-<p>Average: <span id="avgtodismissalrecent">135</span></p>
-<p>Median: <span id="mediantodismissalrecent">105</span></p>
+<p>Average: <span id="avgtodismissalrecent">115</span></p>
+<p>Median: <span id="mediantodismissalrecent">99</span></p>
 <p>Mode: <span id="modetodismissalrecent">51</span></p>
 </div>
 <div><h4>Dismissals in the 1st year of the CCB</h4>
@@ -1065,7 +1059,7 @@ are writing in their claims, you can download a file that incudes that language 
 <td>5</td>
 </tr>
 <tr>
-<td>Closed; failure of payment likely</td>
+<td>Closed; looks like payment failed</td>
 <td>5</td>
 </tr>
 <tr>
@@ -1854,8 +1848,8 @@ are writing in their claims, you can download a file that incudes that language 
 <h3>Top reasons - all orders</h3>
 <div class="flex-container">
 <div><h4>All orders to amend</h4>
-<p><span id="numallreasonsall">1327</span> reasons collected from <span id="numotasallall">538</span> 
-orders in <span id="allcasesall">424</span> cases.</p>
+<p><span id="numallreasonsall">1335</span> reasons collected from <span id="numotasallall">542</span> 
+orders in <span id="allcasesall">426</span> cases.</p>
 <p>Showing first 20 rows.</p>
 <table class="dataframe" id="otasallall">
 <thead>
@@ -1879,7 +1873,7 @@ orders in <span id="allcasesall">424</span> cases.</p>
 </tr>
 <tr>
 <td>Foreign Respondent</td>
-<td>53</td>
+<td>55</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Substantial Similarity</td>
@@ -1926,15 +1920,15 @@ orders in <span id="allcasesall">424</span> cases.</p>
 <td>23</td>
 </tr>
 <tr>
-<td>Registration Number</td>
-<td>17</td>
-</tr>
-<tr>
 <td>Registration</td>
 <td>17</td>
 </tr>
 <tr>
 <td>Copyright Infringement Claim — Legal or Beneficial Ownership</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Registration Number</td>
 <td>17</td>
 </tr>
 <tr>
@@ -1948,7 +1942,7 @@ orders in <span id="allcasesall">424</span> cases.</p>
 </tbody>
 </table></div>
 <div><h4>Represented claimants</h4>
-<p><span id="numrepreasonsall">134</span> reasons collected from <span id="numotasrepall">75</span> 
+<p><span id="numrepreasonsall">136</span> reasons collected from <span id="numotasrepall">77</span> 
 orders in <span id="repcasesall">59</span> cases.</p>
 <p>Showing first 20 rows.</p>
 <table class="dataframe" id="otasrepall">
@@ -1969,7 +1963,7 @@ orders in <span id="repcasesall">59</span> cases.</p>
 </tr>
 <tr>
 <td>Foreign Respondent</td>
-<td>9</td>
+<td>11</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Elements</td>
@@ -2042,8 +2036,8 @@ orders in <span id="repcasesall">59</span> cases.</p>
 </tbody>
 </table></div>
 <div><h4>Unrepresented claimants</h4>
-<p><span id="numunrepreasonsall">1193</span> reasons collected from <span id="numotasunrepall">463</span> 
-orders in <span id="unrepcasesall">365</span> cases.</p>
+<p><span id="numunrepreasonsall">1199</span> reasons collected from <span id="numotasunrepall">465</span> 
+orders in <span id="unrepcasesall">367</span> cases.</p>
 <p>Showing first 20 rows.</p>
 <table class="dataframe" id="otasunrepall">
 <thead>
@@ -2106,15 +2100,15 @@ orders in <span id="unrepcasesall">365</span> cases.</p>
 <td>23</td>
 </tr>
 <tr>
-<td>Copyright Infringement Claim — Access</td>
-<td>20</td>
-</tr>
-<tr>
 <td>Copyright Infringement Claim — Clarity</td>
 <td>20</td>
 </tr>
 <tr>
-<td>Registration Number</td>
+<td>Copyright Infringement Claim — Access</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Respondent Clarity</td>
 <td>16</td>
 </tr>
 <tr>
@@ -2122,7 +2116,7 @@ orders in <span id="unrepcasesall">365</span> cases.</p>
 <td>16</td>
 </tr>
 <tr>
-<td>Respondent Clarity</td>
+<td>Registration Number</td>
 <td>16</td>
 </tr>
 <tr>
@@ -2139,8 +2133,8 @@ orders in <span id="unrepcasesall">365</span> cases.</p>
 <h3>Top reasons - past 30 days</h3>
 <div class="flex-container">
 <div><h4>All orders</h4>
-<p><span id="numallreasonsrecent">57</span> reasons collected from <span id="numotasallrecent">20</span> 
-orders in <span id="allcasesrecent">19</span> cases.</p>
+<p><span id="numallreasonsrecent">65</span> reasons collected from <span id="numotasallrecent">24</span> 
+orders in <span id="allcasesrecent">23</span> cases.</p>
 <table class="dataframe" id="otasallrecent">
 <thead>
 <tr style="text-align: center;">
@@ -2158,16 +2152,24 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 <td>8</td>
 </tr>
 <tr>
-<td>Infringing Activity</td>
+<td>Copyright Infringement — Elements</td>
 <td>7</td>
 </tr>
 <tr>
-<td>Copyright Infringement — Elements</td>
+<td>Infringing Activity</td>
 <td>7</td>
 </tr>
 <tr>
 <td>Legal or Beneficial Ownership</td>
 <td>4</td>
+</tr>
+<tr>
+<td>Foreign Respondent</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Misrepresentation — Elements</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Legal and Beneficial Ownership</td>
@@ -2178,15 +2180,7 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 <td>2</td>
 </tr>
 <tr>
-<td>Registration Number</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Copyright Registration</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Proper Respondent</td>
+<td>Proper Respondents</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2194,7 +2188,23 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Clarity — Allegedly Infringed Work</td>
+<td>Proper Respondent</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Registration Number</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Takedown Notice</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Misrepresentation</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Proper RespondentPage 3</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2202,19 +2212,23 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Impermissible Claim — Patent Infringement</td>
+<td>Supplemental Documentation</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Misrepresentation — Elements</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Impermissible Claim</td>
+<td>Clarity — Allegedly Infringed Work</td>
 <td>1</td>
 </tr>
 <tr>
 <td>Online Service Provider</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Impermissible Claim — Patent Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Copyright Registration</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2223,6 +2237,10 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 </tr>
 <tr>
 <td>Relief Sought</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Impermissible Claim</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2242,14 +2260,14 @@ orders in <span id="allcasesrecent">19</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Proper Respondents</td>
+<td>Relief Requested</td>
 <td>1</td>
 </tr>
 </tbody>
 </table></div>
 <div><h4>Represented claimants</h4>
-<p><span id="numrepreasonsrecent">2</span> reasons collected from <span id="numotasreprecent">2</span> 
-orders in <span id="repcasesrecent">2</span> cases.</p>
+<p><span id="numrepreasonsrecent">4</span> reasons collected from <span id="numotasreprecent">4</span> 
+orders in <span id="repcasesrecent">4</span> cases.</p>
 <table class="dataframe" id="otasreprecent">
 <thead>
 <tr style="text-align: center;">
@@ -2258,6 +2276,10 @@ orders in <span id="repcasesrecent">2</span> cases.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Foreign Respondent</td>
+<td>2</td>
+</tr>
 <tr>
 <td>Infringing Activity</td>
 <td>1</td>
@@ -2269,8 +2291,8 @@ orders in <span id="repcasesrecent">2</span> cases.</p>
 </tbody>
 </table></div>
 <div><h4>Unrepresented claimants</h4>
-<p><span id="numunrepreasonsrecent">55</span> reasons collected from <span id="numotasunreprecent">18</span> 
-orders in <span id="unrepcasesrecent">17</span> cases.</p>
+<p><span id="numunrepreasonsrecent">61</span> reasons collected from <span id="numotasunreprecent">20</span> 
+orders in <span id="unrepcasesrecent">19</span> cases.</p>
 <table class="dataframe" id="otasunreprecent">
 <thead>
 <tr style="text-align: center;">
@@ -2300,6 +2322,10 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 <td>4</td>
 </tr>
 <tr>
+<td>Misrepresentation — Elements</td>
+<td>2</td>
+</tr>
+<tr>
 <td>Legal and Beneficial Ownership</td>
 <td>2</td>
 </tr>
@@ -2308,15 +2334,7 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 <td>2</td>
 </tr>
 <tr>
-<td>Registration Number</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Copyright Registration</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Proper Respondent</td>
+<td>Proper Respondents</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2324,7 +2342,19 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Clarity — Allegedly Infringed Work</td>
+<td>Proper Respondent</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Registration Number</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Takedown Notice</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Misrepresentation</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2332,19 +2362,27 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Impermissible Claim — Patent Infringement</td>
+<td>Proper RespondentPage 3</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Misrepresentation — Elements</td>
+<td>Supplemental Documentation</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Infringing Activity — Clarity</td>
+<td>Clarity — Allegedly Infringed Work</td>
 <td>1</td>
 </tr>
 <tr>
 <td>Online Service Provider</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Impermissible Claim — Patent Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Copyright Registration</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2353,6 +2391,10 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 </tr>
 <tr>
 <td>Impermissible Claim</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Infringing Activity — Clarity</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2368,7 +2410,7 @@ orders in <span id="unrepcasesrecent">17</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Proper Respondents</td>
+<td>Relief Requested</td>
 <td>1</td>
 </tr>
 </tbody>

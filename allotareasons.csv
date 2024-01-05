@@ -2,7 +2,7 @@
 0,Substantial Similarity,108
 1,Access,97
 2,Copyright Infringement — Elements,69
-3,Foreign Respondent,53
+3,Foreign Respondent,55
 4,Copyright Infringement — Substantial Similarity,41
 5,Copyright Registration,41
 6,Copyright Infringement — Access,40
@@ -14,231 +14,233 @@
 12,Legal or Beneficial Ownership,25
 13,Copyright Infringement Claim — Clarity,23
 14,Copyright Infringement Claim — Access,23
-15,Registration Number,17
-16,Registration,17
-17,Copyright Infringement Claim — Legal or Beneficial Ownership,17
+15,Registration,17
+16,Copyright Infringement Claim — Legal or Beneficial Ownership,17
+17,Registration Number,17
 18,Respondent Clarity,16
 19,Improper Pleading Form,15
 20,Permissible Claim,15
-21,Relief Requested,14
+21,Relief Requested,15
 22,Respondent Information,13
 23,Impermissible Claim,12
-24,Online Service Provider,11
+24,Misrepresentation — Elements,12
 25,Impermissible Claims,11
-26,Misrepresentation — Elements,11
-27,Legal and Beneficial Ownership,10
-28,Infringing Activity — Clarity,10
-29,Clarity — Allegedly Infringed Works,10
-30,Copyright Infringement Claim — Online Service Provider,10
-31,Proper Respondent,9
-32,Respondent Address,9
+26,Online Service Provider,11
+27,Infringing Activity — Clarity,10
+28,Clarity — Allegedly Infringed Works,10
+29,Copyright Infringement Claim — Online Service Provider,10
+30,Legal and Beneficial Ownership,10
+31,Claimant Information,9
+32,Supplemental Documentation,9
 33,Works Infringed — Clarity,9
-34,Claimant Information,9
-35,Supplemental Documentation,8
-36,Work Infringed — Clarity,8
-37,Authorized Representative,8
+34,Proper Respondent,9
+35,Respondent Address,9
+36,Authorized Representative,8
+37,Work Infringed — Clarity,8
 38,Clarity — Infringing Activity,7
 39,Copyright Infringement — Legal or Beneficial Ownership,7
 40,Copyright Infringement Claim — Infringing Activity,7
-41,Copyright Infringement — Permissible Claim,6
-42,Misrepresentation Claim — No misrepresentation,6
+41,Misrepresentation Claim — No misrepresentation,6
+42,Copyright Infringement — Permissible Claim,6
 43,Misrepresentation Claim,6
-44,Supplemental Documents,5
-45,Copyright Infringement — Respondent Clarity,5
-46,Clarity,5
-47,Misrepresentation Claim — Proper Respondent,5
+44,Copyright Infringement — Respondent Clarity,5
+45,Clarity — Allegedly Infringed Work,5
+46,Supplemental Documents,5
+47,Misrepresentation Claim — Clarity,5
 48,Misrepresentation Claim — No Misrepresentation,5
-49,Misrepresentation Claim — Clarity,5
-50,Relief Sought,5
-51,Clarity — Allegedly Infringed Work,5
-52,Copyright Infringement — Online Service Provider,5
-53,Legal or Beneficial Owner,4
-54,Allegedly Infringed Work,4
-55,Condition Precedent to an Implied License,4
-56,Issue — Copyright Infringement Claim — Clarity,4
-57,Copyright Infringement — Ownership,4
+49,Copyright Infringement — Online Service Provider,5
+50,Clarity,5
+51,Relief Sought,5
+52,Misrepresentation Claim — Proper Respondent,5
+53,Issue — Copyright Infringement Claim — Clarity,4
+54,Condition Precedent to an Implied License,4
+55,Legal or Beneficial Owner,4
+56,Implied License,4
+57,Infringed Works,4
 58,Scope of an Implied License,4
-59,Issue — Permissible Claim,4
-60,Implied License,4
-61,Infringed Works,4
-62,Statute of Limitations,4
-63,Copyright Infringement — Registration,4
-64,Proper Claimant,3
-65,Pleading Form,3
-66,Copyright Ownership,3
-67,Respondents — Clarity,3
-68,Infringed Work,3
-69,Author,3
-70,Claimant Address,3
-71,Designated Service Agent,3
-72,Misrepresentation — Clarity,3
-73,Allegedly Infringed Works — Clarity,3
-74,Respondent Contact Information,3
-75,Infringement — Online Service Provider,3
-76,Improper Form,3
-77,Infringement Claim — Access,3
-78,Improper Relief Sought,3
-79,Issue — Supplemental Documentation,3
-80,Elements of an Implied License,3
-81,Type of Work,2
-82,Misrepresentation Claim — Respondent Clarity,2
-83,Online Service Provider — Clarity,2
-84,Issue — Copyright Infringement Claim — Permissible Remedies,2
-85,Copyright Infringement Claim — Registration and Legal and Beneficial Ownership,2
-86,Misrepresentation Claim — False Statement,2
-87,Copyright Registration Number,2
-88,Copyright Infringement Claim — Relief Sought,2
-89,Proper Respondents,2
+59,Allegedly Infringed Work,4
+60,Copyright Infringement — Registration,4
+61,Issue — Permissible Claim,4
+62,Copyright Infringement — Ownership,4
+63,Statute of Limitations,4
+64,Elements of an Implied License,3
+65,Allegedly Infringed Works — Clarity,3
+66,Issue — Supplemental Documentation,3
+67,Infringement — Online Service Provider,3
+68,Respondent Contact Information,3
+69,Pleading Form,3
+70,Misrepresentation — Clarity,3
+71,Infringed Work,3
+72,Author,3
+73,Copyright Ownership,3
+74,Improper Relief Sought,3
+75,Improper Form,3
+76,Claimant Address,3
+77,Designated Service Agent,3
+78,Misrepresentation,3
+79,Infringement Claim — Access,3
+80,Proper Claimant,3
+81,Respondents — Clarity,3
+82,Copyright Infringement Claim — Co—owner,2
+83,Copyright Infringement — Clarity — Infringing Activity,2
+84,Copyright Infringement Claim — Registration and Legal and Beneficial Ownership,2
+85,Clarity — Work Infringed,2
+86,Proper Respondents,2
+87,Copyright Infringement — Relief Sought,2
+88,Work Infringed,2
+89,Works Infringed — Registration Number,2
 90,Misrepresentation Claim — Insufficiency,2
-91,Issue — Copyright Infringement Claim — Relief Sought,2
-92,Issue — Copyright Infringement Claim — Online Service Provider,2
-93,Copyright Infringement — Relief Sought,2
-94,Infringed Work — Clarity,2
-95,Misrepresentation Claim — No Copyright Misrepresentation,2
-96,Work Infringed,2
-97,Copyright Infringement Claim — Co—owner,2
-98,Clarity — Respondents and Works Infringed,2
-99,Misrepresentation Claim — Harm,2
-100,Copyright Infringement Claim — Respondent Information,2
-101,Contact Information,2
-102,Noninfringement Claim — Clarity,2
-103,Works Infringed — Registration Number,2
-104,Clarity — Respondent,2
-105,Clarity — Work Infringed,2
-106,Claim Form,2
-107,Misrepresentation,2
-108,Issue — Misrepresentation Claim — Proper Respondent,2
-109,Copyright Infringement Claim — Element of Access,2
-110,Copyright Infringement — Clarity — Infringing Activity,2
-111,Issue — Copyright Infringement Claim — Element of Access,2
-112,Respondent Address / Foreign Respondent,2
+91,Respondent Address / Foreign Respondent,2
+92,Misrepresentation Claim — False Statement,2
+93,Type of Work,2
+94,Contact Information,2
+95,Clarity — Respondents and Works Infringed,2
+96,Issue — Copyright Infringement Claim — Permissible Remedies,2
+97,Infringed Work — Clarity,2
+98,Claim Form,2
+99,Copyright Infringement Claim — Element of Access,2
+100,Misrepresentation Claim — Harm,2
+101,Clarity — Respondent,2
+102,Issue — Copyright Infringement Claim — Element of Access,2
+103,Copyright Infringement Claim — Relief Sought,2
+104,Online Service Provider — Clarity,2
+105,Issue — Misrepresentation Claim — Proper Respondent,2
+106,Copyright Registration Number,2
+107,Copyright Infringement Claim — Respondent Information,2
+108,Noninfringement Claim — Clarity,2
+109,Misrepresentation Claim — No Copyright Misrepresentation,2
+110,Issue — Copyright Infringement Claim — Relief Sought,2
+111,Issue — Copyright Infringement Claim — Online Service Provider,2
+112,Misrepresentation Claim — Respondent Clarity,2
 113,Permissible Claims,1
-114,Impermissible Claim — Patent Infringement,1
-115,Clarity — Legal and Beneficial Ownership,1
-116,Clarity — Works Infringed,1
-117,Copyright Infringement Claim — Relief Requested Over Statutory Maximum,1
-118,Copyright Infringement — Clarity — Respondent,1
-119,Designated Service Agent Address,1
-120,Infringement Claim — Substantial Similarity,1
-121,Copyright Infringement Claim — Infringement Dates,1
-122,Copyright Infringement Claim — Authorship,1
-123,Copyright Infringement — Ownership and Registration,1
-124,Copyright Infringement Claim — Impermissible Allegations,1
-125,Type of Claim,1
-126,Title,1
-127,Issue — Improper Respondent,1
-128,Section 512(f) — Misrepresentation,1
-129,Good—Faith Belief,1
-130,Previous Litigation,1
-131,Copyright Infringement — Work Infringed,1
-132,Copyright Infringement Claim — Permissible Remedies,1
-133,Copyright Infringement Claim — Allegations Unclear,1
-134,Copyright Infringement Claim — Unrelated Respondents,1
-135,Copyright Infringement Claim — Foreign Respondents,1
-136,Misrepresentation Claim — Relief Sought,1
-137,Copyright Infringement Claim — Works Infringed,1
-138,Clarity — Authorship,1
-139,Related Respondents,1
-140,Impermissible Respondent — Foreign Entity,1
-141,Copyright Infringement Claim — Element of Substantial Similarity,1
-142,Pending or Completed Litigation,1
-143,Claim for a Declaration of Noninfringement — No Accusation by Respondent that Claimant Infringed,1
-144,Claim for a Declaration of Noninfringement — Contradictory Allegations,1
-145,Misrepresentation Claim — No DMCA Takedown Notice or Counter—Notice,1
-146,Similarity,1
-147,Copyright Infringement — Co—Owner,1
-148,Legal and Beneficial Owner,1
-149,Clarity — Infringed Work,1
-150,Amended Claim Against the Uploader,1
-151,Work Infringed — Registration Information,1
-152,Copyright Infringement Claim — Element of Unauthorized Use,1
-153,Issue — Designated Service Agent,1
-154,Improper Respondent — Federal or State Entity,1
-155,Copyright Infringement Claim — Infringed Work,1
-156,Misrepresentation Claim — Elements,1
-157,Improper Respondent — Federal or State entity,1
-158,Foreign Respondents,1
-159,Counter—Notice,1
-160,Infringement — Respondent Information,1
-161,Expert Witness,1
-162,Copyright Infringement — Infringed Work,1
-163,Copyright Infringement Claim—Clarity,1
-164,Copyright Infringement Claim — Copyright Ownership,1
-165,Respondent Information — Address,1
-166,Copyright Infringement — Clarity,1
-167,Copyright Infringement,1
-168,Work Infringed — Author,1
-169,Relief Sought — Previous Dispute,1
-170,Clarity (Respondent),1
-171,Clarity (Infringing Activity),1
-172,Impermissible Claim — Breach of Contract,1
-173,Impermissible Claim — Relief Enforcement,1
-174,Infringing Activities — Clarity,1
-175,Copyright Infringement Claim — Infringing Activities,1
-176,Improper Registration,1
-177,Allegedly Infringing Activities for Each Alleged Work,1
+114,Infringement Claim — Substantial Similarity,1
+115,Clarity — Works Infringed,1
+116,Issue — Designated Service Agent,1
+117,Similarity,1
+118,Takedown Notice,1
+119,Copyright Infringement Claim — Allegations Unclear,1
+120,Clarity — Authorship,1
+121,Copyright Infringement — Clarity — Respondent,1
+122,Amended Claim Against the Uploader,1
+123,Copyright Infringement Claim — Relief Requested Over Statutory Maximum,1
+124,Copyright Infringement Claim — Infringement Dates,1
+125,Copyright Infringement Claim — Authorship,1
+126,Copyright Infringement — Ownership and Registration,1
+127,Foreign Respondents,1
+128,Work Infringed — Registration Information,1
+129,Proper Claimants,1
+130,Type of Claim,1
+131,Previous Litigation,1
+132,Impermissible Claim — Patent Infringement,1
+133,Title,1
+134,Designated Service Agent Address,1
+135,Counter—Notice,1
+136,Good—Faith Belief,1
+137,Clarity — Legal and Beneficial Ownership,1
+138,Impermissible Respondent — Foreign Entity,1
+139,Copyright Infringement Claim — Element of Substantial Similarity,1
+140,Copyright Infringement Claim — Works Infringed,1
+141,Pending or Completed Litigation,1
+142,Claim for a Declaration of Noninfringement — No Accusation by Respondent that Claimant Infringed,1
+143,Claim for a Declaration of Noninfringement — Contradictory Allegations,1
+144,Misrepresentation Claim — No DMCA Takedown Notice or Counter—Notice,1
+145,Legal and Beneficial Owner,1
+146,Clarity — Infringed Work,1
+147,Respondent Information — Address,1
+148,Copyright Infringement Claim — Copyright Ownership,1
+149,Copyright Infringement Claim—Clarity,1
+150,Copyright Infringement — Clarity,1
+151,Misrepresentation Claim — Elements,1
+152,Copyright Infringement — Infringed Work,1
+153,Related Respondents,1
+154,Misrepresentation Claim — Relief Sought,1
+155,Expert Witness,1
+156,Copyright Infringement Claim — Foreign Respondents,1
+157,Copyright Infringement Claim — Unrelated Respondents,1
+158,Infringement — Respondent Information,1
+159,Improper Respondent — Federal or State entity,1
+160,Copyright Infringement Claim — Element of Unauthorized Use,1
+161,Copyright Infringement Claim — Permissible Remedies,1
+162,Copyright Infringement Claim — Infringed Work,1
+163,Improper Respondent — Federal or State Entity,1
+164,Copyright Infringement — Work Infringed,1
+165,Copyright Infringement Claim — Impermissible Allegations,1
+166,Issue — Improper Respondent,1
+167,Section 512(f) — Misrepresentation,1
+168,Copyright Infringement — Improper Relief,1
+169,Copyright Infringement — Co—Owner,1
+170,Allegedly Infringing Activities for Each Alleged Work,1
+171,Clarity (Respondent),1
+172,Clarity (Infringing Activity),1
+173,Impermissible Claim — Breach of Contract,1
+174,Impermissible Claim — Relief Enforcement,1
+175,Infringing Activities — Clarity,1
+176,Copyright Infringement Claim — Infringing Activities,1
+177,Improper Registration,1
 178,Misrepresentation Claim — Relief,1
-179,Legal or Beneficial Ownership (“Once In A Lifetime”),1
-180,Noninfringment — Claim Clarity,1
-181,Genuine Dispute,1
-182,Allegedly Infringing Works and Activities,1
-183,Reasons Why No Infringement Occurred,1
-184,Respondent Name and Address,1
-185,Relief Sought — Impermissible Remedy,1
-186,Current litigation,1
-187,Infringement 2,1
-188,How the respondent accused you of infringement,1
-189,Proper Respondent — Co—owner,1
-190,Exclusive Rights,1
-191,Respondent Clarity — Peter Lei,1
-192,Current Litigation,1
-193,Noninfringement — Infringement Accusations,1
-194,Respondents — Federal and State Entities,1
-195,Respondents — Same or Related Activities,1
-196,Substantial Similarly,1
-197,Noninfringement Claim,1
-198,Supporting Documentation,1
-199,Misrepresentation — Respondent Clarity,1
-200,Legal or Beneficial Ownership (Musical Composition),1
-201,Authorized Work (Sound Recording),1
-202,Joint Ownership,1
-203,Which work the respondent says you infringed,1
-204,Infringement 1,1
-205,Allegedly Infringing Activity,1
-206,Copyright Registration — Deposit,1
-207,Service Request Number,1
-208,Clarity — Participants and Contact Information,1
-209,Copyright Infringement Claim — Deposit,1
-210,Copyright Infringement Claim — Improper Relief Sought,1
-211,Issue — Misrepresentation Claim — No misrepresentation,1
-212,Improper Relief SoughtPage 3,1
-213,Claimant & Respondent Information,1
-214,Declaration of Noninfringement,1
-215,Authorship,1
-216,Direct Infringement,1
-217,Secondary Infringement,1
-218,Unrelated Respondents,1
-219,Copyright Infringement Claim — Same Infringing Activity,1
-220,Misrepresentation Claim — Lack of Takedown Notice to OSP,1
-221,Duplicate Supplementary Documents,1
-222,Copyright Infringement Claim — Ownership,1
-223,Copyright Infringement — Limitation on Damages,1
-224,Claimant and Respondent Information,1
-225,Misrepresentation Claim — Explanation,1
-226,Copyright Infringement Claim — Photographs,1
+179,Work Infringed — Author,1
+180,Legal or Beneficial Ownership (“Once In A Lifetime”),1
+181,Noninfringment — Claim Clarity,1
+182,Genuine Dispute,1
+183,Allegedly Infringing Works and Activities,1
+184,Reasons Why No Infringement Occurred,1
+185,Respondent Name and Address,1
+186,Infringement 1,1
+187,Relief Sought — Impermissible Remedy,1
+188,Relief Sought — Previous Dispute,1
+189,Current litigation,1
+190,How the respondent accused you of infringement,1
+191,Proper Respondent — Co—owner,1
+192,Exclusive Rights,1
+193,Respondent Clarity — Peter Lei,1
+194,Current Litigation,1
+195,Noninfringement — Infringement Accusations,1
+196,Respondents — Federal and State Entities,1
+197,Respondents — Same or Related Activities,1
+198,Substantial Similarly,1
+199,Noninfringement Claim,1
+200,Supporting Documentation,1
+201,Misrepresentation — Respondent Clarity,1
+202,Legal or Beneficial Ownership (Musical Composition),1
+203,Authorized Work (Sound Recording),1
+204,Joint Ownership,1
+205,Which work the respondent says you infringed,1
+206,Infringement 2,1
+207,Allegedly Infringing Activity,1
+208,Misrepresentation Claim — Explanation,1
+209,Copyright Infringement — Limitation on Damages,1
+210,Copyright Infringement Claim — Deposit,1
+211,Copyright Infringement Claim — Improper Relief Sought,1
+212,Issue — Misrepresentation Claim — No misrepresentation,1
+213,Improper Relief SoughtPage 3,1
+214,Claimant & Respondent Information,1
+215,Declaration of Noninfringement,1
+216,Authorship,1
+217,Direct Infringement,1
+218,Secondary Infringement,1
+219,Unrelated Respondents,1
+220,Copyright Infringement Claim — Same Infringing Activity,1
+221,Misrepresentation Claim — Lack of Takedown Notice to OSP,1
+222,Duplicate Supplementary Documents,1
+223,Copyright Infringement Claim — Ownership,1
+224,Copyright Registration — Deposit,1
+225,Clarity — Participants and Contact Information,1
+226,Service Request Number,1
 227,Copyright Infringement Claim,1
-228,Registration Information,1
-229,Legal or Beneficial Ownership (Musical Compositions),1
-230,Access (Literary Work),1
-231,Clarity (Sound Recording),1
-232,Registration Numbers,1
-233,Copyright Infringement Claim — Legal or Beneficial Ownership Clarity,1
-234,Supplemental Materials,1
-235,Infringement Claim — Clarity,1
-236,Copyright Infringement — Improper Relief,1
-237,Clarity — Infringement Dates,1
-238,Section 512(f) — Misrepresentation by Respondent,1
-239,Compulsory License,1
-240,Sync License,1
-241,Authorship — Clarity,1
-242,Proper Claimants,1
+228,Claimant and Respondent Information,1
+229,Registration Information,1
+230,Legal or Beneficial Ownership (Musical Compositions),1
+231,Access (Literary Work),1
+232,Clarity (Sound Recording),1
+233,Registration Numbers,1
+234,Copyright Infringement Claim — Legal or Beneficial Ownership Clarity,1
+235,Supplemental Materials,1
+236,Infringement Claim — Clarity,1
+237,Copyright Infringement,1
+238,Clarity — Infringement Dates,1
+239,Section 512(f) — Misrepresentation by Respondent,1
+240,Compulsory License,1
+241,Sync License,1
+242,Authorship — Clarity,1
+243,Copyright Infringement Claim — Photographs,1
+244,Proper RespondentPage 3,1

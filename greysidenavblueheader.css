@@ -115,11 +115,11 @@ table tbody tr:nth-child(odd) {
 	background-color: #ffffff;
 }
 
-.piechart-iframe {
-    width: 900px;
-    height: 400px;
-    resize: both;
-    overflow: auto;
+iframe {
+  width: 100%;
+  height: 600px;
+  resize: both;
+  overflow: auto;
 }
 
 /* ==================== Sortable  - from https://github.com/tofsjonas/sortable */
