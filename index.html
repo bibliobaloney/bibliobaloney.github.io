@@ -34,7 +34,7 @@
 <div class="header"><h1>Aggregate data about claims filed with the Copyright Claims Board</h1></div>
 <div class="content">
 <h2 id="about">About this page</h2>
-<p>Once a week or so* I run a script to collect information about newly available public documents on 
+<p>Once a week or so I run a script to collect information about newly available public documents on 
         <a href="https://dockets.ccb.gov/">eCCB</a>. I store that information 
         in a <a href="https://github.com/bibliobaloney/ccbpublicinfodb/blob/main/ccbdocsinfo.db">
 		SQLite database that you can download from Github</a> 
@@ -57,8 +57,7 @@ are writing in their claims, you can download a file that incudes that language 
 <a href="infringementdescriptions.csv">Infringement claims (.csv)</a>; 
 <a href="noninfringementdescriptions.csv">Noninfringement claims (.csv)</a>; or
 <a href="dmcadescriptions.csv">DMCA misrepresentation claims (.csv)</a>. </p>
-<p>*I'll be out on vacation in late April/early May and not updating anything during that time.</p>
-<p>Page last updated <span id="rundate">2024-04-24</span></p>
+<p>Page last updated <span id="rundate">2024-05-10</span></p>
 <hr/>
 <h2 id="fds">Final Determinations</h2>
 <p>Per the <a href="https://ccb.gov/proceedings/">CCB website</a>, "A CCB proceeding becomes 
@@ -294,10 +293,10 @@ are writing in their claims, you can download a file that incudes that language 
         'active' after the claimant has filed proof of service with the CCB, and the respondent 
         ... has not opted out within the required time (usually sixty days)." Once a final 
         determination is issued, a case is no longer active.</p>
-<h3>Number of active claims as of <span id="rundate">2024-04-24</span>: 
-<span id="numactivecases"><a href="activecasesbarelist.html">37</a></span></h3>
+<h3>Number of active claims as of <span id="rundate">2024-05-10</span>: 
+<span id="numactivecases"><a href="activecasesbarelist.html">38</a></span></h3>
 <h3>For these active cases, average number of days since the earliest available claim was filed (as of 
-        <span id="rundate">2024-04-24</span>): 
+        <span id="rundate">2024-05-10</span>): 
     <span id="avgdaysactivecasesopen">179</span></h3>
 <h3>Types of claims</h3>
 <table class="dataframe" id="activeclaimtypes">
@@ -310,7 +309,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Infringement</td>
-<td>35</td>
+<td>36</td>
 </tr>
 <tr>
 <td>DMCA Misrepresentation</td>
@@ -330,11 +329,11 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Yes</td>
-<td>20</td>
+<td>22</td>
 </tr>
 <tr>
 <td>No</td>
-<td>17</td>
+<td>16</td>
 </tr>
 </tbody>
 </table>
@@ -344,7 +343,7 @@ are writing in their claims, you can download a file that incudes that language 
         when a claim is publicly available.</p>
 <div class="flex-container">
 <div><h4>Currently active cases</h4>
-<p><span id="pctactiverep">41%</span> of claims had claimants with representation.</p>
+<p><span id="pctactiverep">39%</span> of claims had claimants with representation.</p>
 <p><span id="multiplerep">0</span> claims had multiple law firms representing claimants.</p>
 <table class="dataframe" id="activerepresentation">
 <thead>
@@ -356,7 +355,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>No law firm</td>
-<td>22</td>
+<td>24</td>
 </tr>
 <tr>
 <td>The Law Firm of Higbee and Associates</td>
@@ -413,7 +412,7 @@ are writing in their claims, you can download a file that incudes that language 
 </tbody>
 </table></div>
 <div><h4>Active plus formerly active</h4>
-<p><span id="pcteveractiverep">76%</span> of claims had claimants with representation.</p>
+<p><span id="pcteveractiverep">74%</span> of claims had claimants with representation.</p>
 <p><span id="everactivemultiplerep">0</span> claims had multiple law firms representing claimants.</p>
 <table class="dataframe" id="everactiverepresentation">
 <thead>
@@ -425,7 +424,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>No law firm</td>
-<td>32</td>
+<td>34</td>
 </tr>
 <tr>
 <td>The Law Firm of Higbee and Associates</td>
@@ -527,24 +526,24 @@ are writing in their claims, you can download a file that incudes that language 
 </thead>
 <tbody>
 <tr>
-<td>Waiting for Amended Claim</td>
-<td>39</td>
+<td>Waiting for Proof of Service</td>
+<td>41</td>
 </tr>
 <tr>
-<td>Waiting for Proof of Service</td>
-<td>39</td>
+<td>Waiting for Amended Claim</td>
+<td>29</td>
 </tr>
 <tr>
 <td>Waiting for Scheduling Order/Expiration of Opt Out Window</td>
-<td>34</td>
+<td>24</td>
 </tr>
 <tr>
 <td>Waiting for Initial Review</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td>Waiting for Review of Amended Claim</td>
-<td>6</td>
+<td>7</td>
 </tr>
 <tr>
 <td>In Abeyance</td>
@@ -580,19 +579,19 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Failure to amend</td>
-<td>264</td>
+<td>277</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
-<td>115</td>
+<td>118</td>
 </tr>
 <tr>
 <td>Respondent(s) opted out</td>
-<td>72</td>
+<td>83</td>
 </tr>
 <tr>
 <td>Request from claimant</td>
-<td>67</td>
+<td>70</td>
 </tr>
 <tr>
 <td>3 tries and still noncompliant</td>
@@ -659,19 +658,19 @@ are writing in their claims, you can download a file that incudes that language 
 </tr>
 <tr>
 <td>Respondent(s) opted out</td>
-<td>24</td>
+<td>27</td>
 </tr>
 <tr>
 <td>Request from claimant</td>
-<td>23</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Failure to amend</td>
+<td>22</td>
 </tr>
 <tr>
 <td>Settlement; dismissed with prejudice</td>
 <td>20</td>
-</tr>
-<tr>
-<td>Failure to amend</td>
-<td>18</td>
 </tr>
 <tr>
 <td>Settlement; dismissed without prejudice</td>
@@ -706,19 +705,19 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Failure to amend</td>
-<td>246</td>
+<td>255</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
-<td>78</td>
+<td>81</td>
 </tr>
 <tr>
 <td>Respondent(s) opted out</td>
-<td>48</td>
+<td>56</td>
 </tr>
 <tr>
 <td>Request from claimant</td>
-<td>44</td>
+<td>46</td>
 </tr>
 <tr>
 <td>3 tries and still noncompliant</td>
@@ -783,26 +782,26 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Failure to amend</td>
-<td>23</td>
+<td>18</td>
 </tr>
 <tr>
-<td>Request from claimant</td>
-<td>5</td>
+<td>Respondent(s) opted out</td>
+<td>11</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
 <td>4</td>
 </tr>
 <tr>
-<td>3 tries and still noncompliant</td>
-<td>3</td>
+<td>Request from claimant</td>
+<td>4</td>
 </tr>
 <tr>
 <td>Settlement; dismissed with prejudice</td>
-<td>3</td>
+<td>1</td>
 </tr>
 <tr>
-<td>Bad-faith conduct</td>
+<td>3 tries and still noncompliant</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -817,15 +816,19 @@ are writing in their claims, you can download a file that incudes that language 
 </thead>
 <tbody>
 <tr>
+<td>Failure to amend</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Respondent(s) opted out</td>
+<td>3</td>
+</tr>
+<tr>
 <td>Request from claimant</td>
 <td>2</td>
 </tr>
 <tr>
 <td>Settlement; dismissed with prejudice</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Failure to amend</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -841,26 +844,22 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Failure to amend</td>
-<td>22</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Respondent(s) opted out</td>
+<td>8</td>
 </tr>
 <tr>
 <td>Proof of service not filed</td>
 <td>4</td>
 </tr>
 <tr>
-<td>3 tries and still noncompliant</td>
-<td>3</td>
-</tr>
-<tr>
 <td>Request from claimant</td>
-<td>3</td>
+<td>2</td>
 </tr>
 <tr>
-<td>Bad-faith conduct</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Settlement; dismissed with prejudice</td>
+<td>3 tries and still noncompliant</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1029,14 +1028,14 @@ are writing in their claims, you can download a file that incudes that language 
 <p>This data is only available for cases where the date of the filing of the claim is known.</p>
 <div class="flex-container">
 <div><h4>All dismissals</h4>
-<p>Average: <span id="avgtodismissalall">117</span></p>
-<p>Median: <span id="mediantodismissalall">99</span></p>
+<p>Average: <span id="avgtodismissalall">116</span></p>
+<p>Median: <span id="mediantodismissalall">98</span></p>
 <p>Mode: <span id="modetodismissalall">[73, 87]</span></p>
 </div>
 <div><h4>Dismissals in the past 30 days</h4>
-<p>Average: <span id="avgtodismissalrecent">126</span></p>
-<p>Median: <span id="mediantodismissalrecent">88</span></p>
-<p>Mode: <span id="modetodismissalrecent">[88]</span></p>
+<p>Average: <span id="avgtodismissalrecent">107</span></p>
+<p>Median: <span id="mediantodismissalrecent">68</span></p>
+<p>Mode: <span id="modetodismissalrecent">[180]</span></p>
 </div>
 <div><h4>Dismissals in the 1st year of the CCB</h4>
 <p>Average: <span id="avgtodismissalold">102</span></p>
@@ -1048,8 +1047,8 @@ are writing in their claims, you can download a file that incudes that language 
 <h2 id="all">All Cases</h2>
 <h3>Opening and resolution</h3>
 <div class="flex-container">
-<div><p>Dockets found: <span id="allcasescount">823</span></p></div>
-<div><p>Claims dismissed/closed: <span id="numclosedcases">652</span></p>
+<div><p>Dockets found: <span id="allcasescount">835</span></p></div>
+<div><p>Claims dismissed/closed: <span id="numclosedcases">682</span></p>
 <table class="dataframe" id="closedcasestatus">
 <thead>
 <tr style="text-align: center;">
@@ -1060,7 +1059,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Dismissed Without Prejudice</td>
-<td>589</td>
+<td>619</td>
 </tr>
 <tr>
 <td>Dismissed With Prejudice</td>
@@ -1107,23 +1106,23 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Infringement</td>
-<td>653</td>
+<td>661</td>
 </tr>
 <tr>
 <td>DMCA Misrepresentation</td>
-<td>76</td>
+<td>77</td>
 </tr>
 <tr>
 <td>Infringement, DMCA Misrepresentation</td>
-<td>55</td>
+<td>56</td>
 </tr>
 <tr>
 <td>Noninfringement</td>
-<td>12</td>
+<td>13</td>
 </tr>
 <tr>
 <td>Infringement, Noninfringement, DMCA Misrepresentation</td>
-<td>9</td>
+<td>10</td>
 </tr>
 <tr>
 <td>Noninfringement, DMCA Misrepresentation</td>
@@ -1141,11 +1140,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Infringement</td>
-<td>16</td>
-</tr>
-<tr>
-<td>Infringement, DMCA Misrepresentation</td>
-<td>2</td>
+<td>17</td>
 </tr>
 <tr>
 <td>DMCA Misrepresentation</td>
@@ -1156,7 +1151,11 @@ are writing in their claims, you can download a file that incudes that language 
 <td>1</td>
 </tr>
 <tr>
-<td>Noninfringement, DMCA Misrepresentation</td>
+<td>Infringement, Noninfringement, DMCA Misrepresentation</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Infringement, DMCA Misrepresentation</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1215,11 +1214,11 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>No</td>
-<td>464</td>
+<td>471</td>
 </tr>
 <tr>
 <td>Yes</td>
-<td>347</td>
+<td>352</td>
 </tr>
 </tbody>
 </table></div>
@@ -1233,11 +1232,11 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Yes</td>
-<td>13</td>
+<td>11</td>
 </tr>
 <tr>
 <td>No</td>
-<td>9</td>
+<td>11</td>
 </tr>
 </tbody>
 </table></div>
@@ -1277,7 +1276,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>No law firm</td>
-<td>658</td>
+<td>669</td>
 </tr>
 <tr>
 <td>Jekielek &amp; Janis</td>
@@ -1328,6 +1327,10 @@ are writing in their claims, you can download a file that incudes that language 
 <td>3</td>
 </tr>
 <tr>
+<td>Seiller Waterman</td>
+<td>3</td>
+</tr>
+<tr>
 <td>Donahue Fitzgerald LLP</td>
 <td>3</td>
 </tr>
@@ -1347,14 +1350,10 @@ are writing in their claims, you can download a file that incudes that language 
 <td>UCI Intellectual Property, Arts, and Technology Clinic</td>
 <td>2</td>
 </tr>
-<tr>
-<td>Seiller Waterman</td>
-<td>2</td>
-</tr>
 </tbody>
 </table></div>
 <div><h4>Past 30 days</h4>
-<p><span id="pctrecentclaimsrep">36%</span> of claims had claimants with representation.</p>
+<p><span id="pctrecentclaimsrep">18%</span> of claims had claimants with representation.</p>
 <p><span id="multiplereprecentclaims">0</span> claims had multiple law firms representing claimants.</p>
 <table class="dataframe" id="representationrecent">
 <thead>
@@ -1366,7 +1365,7 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>No law firm</td>
-<td>15</td>
+<td>19</td>
 </tr>
 <tr>
 <td>Jekielek &amp; Janis</td>
@@ -1374,22 +1373,6 @@ are writing in their claims, you can download a file that incudes that language 
 </tr>
 <tr>
 <td>Seiller Waterman</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Law Office of Elizabeth Swanson</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Faerman Law, P.A.</td>
-<td>1</td>
-</tr>
-<tr>
-<td>CJN Law Group, P.C.</td>
-<td>1</td>
-</tr>
-<tr>
-<td>UCI Intellectual Property, Arts, and Technology Clinic</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1484,19 +1467,19 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Pictorial Graphic and Sculptural (such as two-dimensional and three-dimensional works of art, graphic art, and photographs)</td>
-<td>578</td>
+<td>581</td>
 </tr>
 <tr>
 <td>Motion picture and audiovisual</td>
-<td>205</td>
+<td>209</td>
 </tr>
 <tr>
 <td>Sound recordings</td>
-<td>170</td>
+<td>186</td>
 </tr>
 <tr>
 <td>Literary (such as fiction, nonfiction, poetry, reference works)</td>
-<td>136</td>
+<td>137</td>
 </tr>
 <tr>
 <td>Musical (such as the underlying musical composition)</td>
@@ -1507,12 +1490,12 @@ are writing in their claims, you can download a file that incudes that language 
 <td>52</td>
 </tr>
 <tr>
-<td>Software</td>
-<td>16</td>
+<td>Dramatic (such as a screenplay, play or other script)</td>
+<td>17</td>
 </tr>
 <tr>
-<td>Dramatic (such as a screenplay, play or other script)</td>
-<td>15</td>
+<td>Software</td>
+<td>16</td>
 </tr>
 <tr>
 <td>Architectural</td>
@@ -1530,14 +1513,18 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Pictorial Graphic and Sculptural (such as two-dimensional and three-dimensional works of art, graphic art, and photographs)</td>
-<td>17</td>
-</tr>
-<tr>
-<td>Motion picture and audiovisual</td>
 <td>16</td>
 </tr>
 <tr>
-<td>Musical (such as the underlying musical composition)</td>
+<td>Sound recordings</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Motion picture and audiovisual</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Dramatic (such as a screenplay, play or other script)</td>
 <td>3</td>
 </tr>
 <tr>
@@ -1545,11 +1532,7 @@ are writing in their claims, you can download a file that incudes that language 
 <td>2</td>
 </tr>
 <tr>
-<td>Sound recordings</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Dramatic (such as a screenplay, play or other script)</td>
+<td>Musical (such as the underlying musical composition)</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1618,11 +1601,11 @@ are writing in their claims, you can download a file that incudes that language 
 <tbody>
 <tr>
 <td>Yes</td>
-<td>889</td>
+<td>911</td>
 </tr>
 <tr>
 <td>No</td>
-<td>363</td>
+<td>367</td>
 </tr>
 </tbody>
 </table></div>
@@ -1635,12 +1618,12 @@ are writing in their claims, you can download a file that incudes that language 
 </thead>
 <tbody>
 <tr>
-<td>No</td>
-<td>25</td>
+<td>Yes</td>
+<td>33</td>
 </tr>
 <tr>
-<td>Yes</td>
-<td>15</td>
+<td>No</td>
+<td>20</td>
 </tr>
 </tbody>
 </table></div>
@@ -1699,19 +1682,19 @@ are writing in their claims, you can download a file that incudes that language 
 <td>9</td>
 </tr>
 <tr>
-<td>Jean M Guerrero</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Dana Hursey</td>
-<td>8</td>
-</tr>
-<tr>
 <td>David Bibiyan</td>
 <td>8</td>
 </tr>
 <tr>
+<td>Jean M Guerrero</td>
+<td>8</td>
+</tr>
+<tr>
 <td>Langston M Childs</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Dana Hursey</td>
 <td>8</td>
 </tr>
 <tr>
@@ -1723,6 +1706,10 @@ are writing in their claims, you can download a file that incudes that language 
 <td>6</td>
 </tr>
 <tr>
+<td>Floatsup, LLC</td>
+<td>5</td>
+</tr>
+<tr>
 <td>Helen Walters</td>
 <td>5</td>
 </tr>
@@ -1731,11 +1718,7 @@ are writing in their claims, you can download a file that incudes that language 
 <td>5</td>
 </tr>
 <tr>
-<td>Floatsup, LLC</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Keith F Bell</td>
+<td>Gergely Turi</td>
 <td>4</td>
 </tr>
 <tr>
@@ -1743,31 +1726,19 @@ are writing in their claims, you can download a file that incudes that language 
 <td>4</td>
 </tr>
 <tr>
-<td>VideoHat LLC</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Gergely Turi</td>
-<td>4</td>
-</tr>
-<tr>
 <td>Hillary Wright</td>
 <td>4</td>
 </tr>
 <tr>
-<td>Martin McNeil</td>
-<td>3</td>
+<td>Keith F Bell</td>
+<td>4</td>
 </tr>
 <tr>
-<td>Jon Q Wright</td>
-<td>3</td>
+<td>VideoHat LLC</td>
+<td>4</td>
 </tr>
 <tr>
-<td>Florian Sommet</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Dolls Kill, Inc.</td>
+<td>Eckart Klobe</td>
 <td>3</td>
 </tr>
 <tr>
@@ -1775,23 +1746,11 @@ are writing in their claims, you can download a file that incudes that language 
 <td>3</td>
 </tr>
 <tr>
-<td>Eckart Klobe</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Photolive Inc. dba Stockyard Photos</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Allen Nelson</td>
+<td>lead creation inc</td>
 <td>3</td>
 </tr>
 <tr>
 <td>Gan Shu</td>
-<td>3</td>
-</tr>
-<tr>
-<td>lead creation inc</td>
 <td>3</td>
 </tr>
 <tr>
@@ -1803,11 +1762,7 @@ are writing in their claims, you can download a file that incudes that language 
 <td>3</td>
 </tr>
 <tr>
-<td>Catalina M Jaramillo</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Angela M Jarman</td>
+<td>Nadine Hokayem</td>
 <td>3</td>
 </tr>
 <tr>
@@ -1815,11 +1770,47 @@ are writing in their claims, you can download a file that incudes that language 
 <td>3</td>
 </tr>
 <tr>
-<td>Nadine Hokayem</td>
+<td>Florian Sommet</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Photolive Inc. dba Stockyard Photos</td>
+<td>3</td>
+</tr>
+<tr>
+<td>James Colwell</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Richard Gideons</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Martin McNeil</td>
 <td>3</td>
 </tr>
 <tr>
 <td>Steven Hirsch</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Dolls Kill, Inc.</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Allen Nelson</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Angela M Jarman</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Catalina M Jaramillo</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Jon Q Wright</td>
 <td>3</td>
 </tr>
 </tbody>
@@ -1841,15 +1832,15 @@ are writing in their claims, you can download a file that incudes that language 
 <td>12</td>
 </tr>
 <tr>
+<td>YouTube</td>
+<td>8</td>
+</tr>
+<tr>
 <td>The Rochester Oratorio Society, Inc.</td>
 <td>8</td>
 </tr>
 <tr>
 <td>YouTube, LLC</td>
-<td>8</td>
-</tr>
-<tr>
-<td>YouTube</td>
 <td>8</td>
 </tr>
 <tr>
@@ -1861,12 +1852,16 @@ are writing in their claims, you can download a file that incudes that language 
 <td>5</td>
 </tr>
 <tr>
+<td>Townsville Realty LLC</td>
+<td>4</td>
+</tr>
+<tr>
 <td>Clayton Morris</td>
 <td>4</td>
 </tr>
 <tr>
-<td>Townsville Realty LLC</td>
-<td>4</td>
+<td>Chris Buechner</td>
+<td>3</td>
 </tr>
 <tr>
 <td>Alex Brecher</td>
@@ -1877,11 +1872,11 @@ are writing in their claims, you can download a file that incudes that language 
 <td>3</td>
 </tr>
 <tr>
-<td>Apple Inc.</td>
+<td>Universal Music Group</td>
 <td>3</td>
 </tr>
 <tr>
-<td>Universal Music Group</td>
+<td>Apple Inc.</td>
 <td>3</td>
 </tr>
 </tbody>
@@ -1922,8 +1917,8 @@ are writing in their claims, you can download a file that incudes that language 
 <h3>Top reasons - all orders</h3>
 <div class="flex-container">
 <div><h4>All orders to amend</h4>
-<p><span id="numallreasonsall">1677</span> reasons collected from <span id="numotasallall">660</span> 
-orders in <span id="allcasesall">512</span> cases.</p>
+<p><span id="numallreasonsall">1708</span> reasons collected from <span id="numotasallall">671</span> 
+orders in <span id="allcasesall">519</span> cases.</p>
 <p>Showing first 20 rows.</p>
 <table class="dataframe" id="otasallall">
 <thead>
@@ -1935,15 +1930,15 @@ orders in <span id="allcasesall">512</span> cases.</p>
 <tbody>
 <tr>
 <td>Substantial Similarity</td>
-<td>150</td>
+<td>155</td>
 </tr>
 <tr>
 <td>Access</td>
-<td>131</td>
+<td>135</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Elements</td>
-<td>103</td>
+<td>105</td>
 </tr>
 <tr>
 <td>Copyright Registration</td>
@@ -1955,11 +1950,11 @@ orders in <span id="allcasesall">512</span> cases.</p>
 </tr>
 <tr>
 <td>Infringing Activity</td>
-<td>54</td>
+<td>56</td>
 </tr>
 <tr>
 <td>Legal or Beneficial Ownership</td>
-<td>43</td>
+<td>44</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Substantial Similarity</td>
@@ -1986,31 +1981,31 @@ orders in <span id="allcasesall">512</span> cases.</p>
 <td>29</td>
 </tr>
 <tr>
-<td>Copyright Infringement Claim — Clarity</td>
-<td>23</td>
+<td>Allegedly Infringed Work</td>
+<td>25</td>
 </tr>
 <tr>
 <td>Copyright Infringement Claim — Access</td>
 <td>23</td>
 </tr>
 <tr>
-<td>Allegedly Infringed Work</td>
+<td>Copyright Infringement Claim — Clarity</td>
 <td>23</td>
-</tr>
-<tr>
-<td>Respondent Clarity</td>
-<td>22</td>
 </tr>
 <tr>
 <td>Registration</td>
 <td>22</td>
 </tr>
 <tr>
-<td>Relief Requested</td>
-<td>18</td>
+<td>Respondent Clarity</td>
+<td>22</td>
 </tr>
 <tr>
 <td>Registration Number</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Relief Requested</td>
 <td>18</td>
 </tr>
 </tbody>
@@ -2110,8 +2105,8 @@ orders in <span id="repcasesall">67</span> cases.</p>
 </tbody>
 </table></div>
 <div><h4>Unrepresented claimants</h4>
-<p><span id="numunrepreasonsall">1527</span> reasons collected from <span id="numotasunrepall">573</span> 
-orders in <span id="unrepcasesall">445</span> cases.</p>
+<p><span id="numunrepreasonsall">1558</span> reasons collected from <span id="numotasunrepall">584</span> 
+orders in <span id="unrepcasesall">452</span> cases.</p>
 <p>Showing first 20 rows.</p>
 <table class="dataframe" id="otasunrepall">
 <thead>
@@ -2123,15 +2118,15 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 <tbody>
 <tr>
 <td>Substantial Similarity</td>
-<td>138</td>
+<td>143</td>
 </tr>
 <tr>
 <td>Access</td>
-<td>119</td>
+<td>123</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Elements</td>
-<td>96</td>
+<td>98</td>
 </tr>
 <tr>
 <td>Copyright Registration</td>
@@ -2139,7 +2134,7 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 </tr>
 <tr>
 <td>Infringing Activity</td>
-<td>49</td>
+<td>51</td>
 </tr>
 <tr>
 <td>Foreign Respondent</td>
@@ -2147,7 +2142,7 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 </tr>
 <tr>
 <td>Legal or Beneficial Ownership</td>
-<td>41</td>
+<td>42</td>
 </tr>
 <tr>
 <td>Copyright Infringement — Substantial Similarity</td>
@@ -2166,6 +2161,10 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 <td>33</td>
 </tr>
 <tr>
+<td>Allegedly Infringed Work</td>
+<td>25</td>
+</tr>
+<tr>
 <td>Copyright Infringement Claim — Elements</td>
 <td>24</td>
 </tr>
@@ -2174,19 +2173,15 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 <td>24</td>
 </tr>
 <tr>
-<td>Allegedly Infringed Work</td>
-<td>23</td>
-</tr>
-<tr>
 <td>Respondent Clarity</td>
 <td>21</td>
 </tr>
 <tr>
-<td>Copyright Infringement Claim — Clarity</td>
+<td>Registration</td>
 <td>20</td>
 </tr>
 <tr>
-<td>Registration</td>
+<td>Copyright Infringement Claim — Clarity</td>
 <td>20</td>
 </tr>
 <tr>
@@ -2207,8 +2202,8 @@ orders in <span id="unrepcasesall">445</span> cases.</p>
 <h3>Top reasons - past 30 days</h3>
 <div class="flex-container">
 <div><h4>All orders</h4>
-<p><span id="numallreasonsrecent">68</span> reasons collected from <span id="numotasallrecent">27</span> 
-orders in <span id="allcasesrecent">26</span> cases.</p>
+<p><span id="numallreasonsrecent">59</span> reasons collected from <span id="numotasallrecent">20</span> 
+orders in <span id="allcasesrecent">20</span> cases.</p>
 <table class="dataframe" id="otasallrecent">
 <thead>
 <tr style="text-align: center;">
@@ -2218,23 +2213,15 @@ orders in <span id="allcasesrecent">26</span> cases.</p>
 </thead>
 <tbody>
 <tr>
-<td>Copyright Infringement — Elements</td>
-<td>6</td>
-</tr>
-<tr>
 <td>Substantial Similarity</td>
 <td>6</td>
 </tr>
 <tr>
 <td>Legal or Beneficial Ownership</td>
-<td>6</td>
+<td>5</td>
 </tr>
 <tr>
 <td>Access</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Copyright Registration</td>
 <td>5</td>
 </tr>
 <tr>
@@ -2242,35 +2229,91 @@ orders in <span id="allcasesrecent">26</span> cases.</p>
 <td>4</td>
 </tr>
 <tr>
-<td>Registration</td>
+<td>Copyright Registration</td>
 <td>3</td>
-</tr>
-<tr>
-<td>Misrepresentation — Clarity</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Respondent Address</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Relief Requested</td>
-<td>1</td>
 </tr>
 <tr>
 <td>Allegedly Infringed Work</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Misrepresentation</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Noninfringement Claim — Clarity</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Copyright Infringement — Elements</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Proper Respondent</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Copyright Registration — Other Works</td>
+<td>Actual Claim or Controversy</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Access — Other Works</td>
+<td>Misrepresentation Claim — Clarity</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Substantial Similarity — Other Works</td>
+<td>Permissible Claim — Noninfringement v. Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Allegedly Infringed Work — Clarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Proper Respondent — Co—owner</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Misrepresentation — Clarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Allegedly Infringed Works</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Online Service Providers</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Permissible Claim</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Secondary Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pending Litigation — Hard Lens Media, Inc.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Contact Information</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Unrelated Respondents</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Registration</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Missing Allegations</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2282,31 +2325,23 @@ orders in <span id="allcasesrecent">26</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Noninfringement Claim — Dispute</td>
+<td>Relief Requested</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Missing Allegations</td>
+<td>Substantial Similarity — Other Works</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Unrelated Respondents</td>
+<td>Access — Other Works</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Contact Information</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Noninfringement Claim — Clarity</td>
+<td>Copyright Registration — Other Works</td>
 <td>1</td>
 </tr>
 <tr>
 <td>Infringed Work — Clarity</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Allegedly Infringed Work — Clarity</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2318,54 +2353,14 @@ orders in <span id="allcasesrecent">26</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Pending Litigation — Hard Lens Media, Inc.</td>
-<td>1</td>
-</tr>
-<tr>
-<td>B. Scope</td>
-<td>1</td>
-</tr>
-<tr>
-<td>A. Condition Precedent</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Impermissible Claim — Breach of Contract</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Online Service Provider</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Copyright Registrations</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Relief</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Misrepresentation</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Respondent Clarity</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Respondent Information</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Misrepresentation Claim — Clarity</td>
+<td>Copyright Infringement — Legal or Beneficial Ownership</td>
 <td>1</td>
 </tr>
 </tbody>
 </table></div>
 <div><h4>Represented claimants</h4>
-<p><span id="numrepreasonsrecent">10</span> reasons collected from <span id="numotasreprecent">6</span> 
-orders in <span id="repcasesrecent">6</span> cases.</p>
+<p><span id="numrepreasonsrecent">1</span> reasons collected from <span id="numotasreprecent">1</span> 
+orders in <span id="repcasesrecent">1</span> cases.</p>
 <table class="dataframe" id="otasreprecent">
 <thead>
 <tr style="text-align: center;">
@@ -2375,42 +2370,14 @@ orders in <span id="repcasesrecent">6</span> cases.</p>
 </thead>
 <tbody>
 <tr>
-<td>Copyright Registration</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Respondent Address</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Registration</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Impermissible Claim — Breach of Contract</td>
-<td>1</td>
-</tr>
-<tr>
-<td>A. Condition Precedent</td>
-<td>1</td>
-</tr>
-<tr>
-<td>B. Scope</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Noninfringement Claim — Dispute</td>
-<td>1</td>
-</tr>
-<tr>
 <td>Infringed Work — Clarity</td>
 <td>1</td>
 </tr>
 </tbody>
 </table></div>
 <div><h4>Unrepresented claimants</h4>
-<p><span id="numunrepreasonsrecent">58</span> reasons collected from <span id="numotasunreprecent">21</span> 
-orders in <span id="unrepcasesrecent">20</span> cases.</p>
+<p><span id="numunrepreasonsrecent">58</span> reasons collected from <span id="numotasunreprecent">19</span> 
+orders in <span id="unrepcasesrecent">19</span> cases.</p>
 <table class="dataframe" id="otasunreprecent">
 <thead>
 <tr style="text-align: center;">
@@ -2420,47 +2387,103 @@ orders in <span id="unrepcasesrecent">20</span> cases.</p>
 </thead>
 <tbody>
 <tr>
-<td>Copyright Infringement — Elements</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Legal or Beneficial Ownership</td>
-<td>6</td>
-</tr>
-<tr>
 <td>Substantial Similarity</td>
 <td>6</td>
 </tr>
 <tr>
+<td>Legal or Beneficial Ownership</td>
+<td>5</td>
+</tr>
+<tr>
 <td>Access</td>
-<td>6</td>
+<td>5</td>
 </tr>
 <tr>
 <td>Infringing Activity</td>
 <td>4</td>
 </tr>
 <tr>
-<td>Misrepresentation — Clarity</td>
-<td>3</td>
-</tr>
-<tr>
 <td>Copyright Registration</td>
 <td>3</td>
 </tr>
 <tr>
-<td>Registration</td>
+<td>Allegedly Infringed Work</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Misrepresentation</td>
 <td>2</td>
+</tr>
+<tr>
+<td>Noninfringement Claim — Clarity</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Copyright Infringement — Elements</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Proper Respondent</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Actual Claim or Controversy</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Permissible Claim</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Permissible Claim — Noninfringement v. Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Noninfringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Allegedly Infringed Work — Clarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Proper Respondent — Co—owner</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Misrepresentation — Clarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Online Service Providers</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Allegedly Infringed Works</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Secondary Infringement</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pending Litigation — Hard Lens Media, Inc.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Misrepresentation Claim — Clarity</td>
+<td>1</td>
 </tr>
 <tr>
 <td>Contact Information</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Noninfringement Claim — Clarity</td>
+<td>Unrelated Respondents</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Copyright Registration — Other Works</td>
+<td>Registration</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2488,15 +2511,7 @@ orders in <span id="unrepcasesrecent">20</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Unrelated Respondents</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Respondent Clarity Regarding Odysee</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Allegedly Infringed Work</td>
+<td>Copyright Registration — Other Works</td>
 <td>1</td>
 </tr>
 <tr>
@@ -2504,39 +2519,11 @@ orders in <span id="unrepcasesrecent">20</span> cases.</p>
 <td>1</td>
 </tr>
 <tr>
-<td>Pending Litigation — Hard Lens Media, Inc.</td>
+<td>Respondent Clarity Regarding Odysee</td>
 <td>1</td>
 </tr>
 <tr>
-<td>Allegedly Infringed Work — Clarity</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Online Service Provider</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Copyright Registrations</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Relief</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Misrepresentation</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Respondent Clarity</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Respondent Information</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Misrepresentation Claim — Clarity</td>
+<td>Copyright Infringement — Legal or Beneficial Ownership</td>
 <td>1</td>
 </tr>
 </tbody>
