@@ -40,6 +40,17 @@ body {
     margin-right: 0px;
 }
 
+.notice {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff99;
+}
+
+.notice p {
+  padding: 20px;
+}
+
 .header {
     display: flex;
     margin: 0;
